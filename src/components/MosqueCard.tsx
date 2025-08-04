@@ -1,12 +1,15 @@
+import Image from "next/image";
+import Link from "next/link";
 import { CarParkingIcon, BikeParkingIcon, WheelchairIcon, PrayerMatIcon } from "@/components/FacilityIcons";
 import { Mosque } from "@/types/Mosque";
 
 interface MosqueCardProps {
   mosque: Mosque;
   onClick?: (mosque: Mosque) => void;
+  detailsHref?: string; // Optional: if you want to navigate to a details page
 }
 
-export default function MosqueCard({ mosque, onClick }: MosqueCardProps) {
+export default function MosqueCard({ mosque, onClick, detailsHref }: MosqueCardProps) {
   const getACStatus = (hasAC: boolean, status?: string | null) => {
     if (!hasAC)
       return { text: "Tidak ada AC", color: "text-gray-500 bg-gray-100" };
@@ -47,32 +50,32 @@ export default function MosqueCard({ mosque, onClick }: MosqueCardProps) {
     e.stopPropagation();
     
     // Use google_maps_link if available, otherwise construct search query
-    if (mosque.google_maps_link) {
-      window.open(mosque.google_maps_link, "_blank");
-    } else {
-      const query = encodeURIComponent(mosque.address);
-      window.open(
-        `https://www.google.com/maps/search/?api=1&query=${query}`,
-        "_blank"
-      );
+    const mapsUrl = mosque.google_maps_link || 
+      `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(mosque.address)}`;
+    
+    // Open external link with security best practices
+    const newWindow = window.open(mapsUrl, "_blank");
+    if (newWindow) {
+      newWindow.opener = null; // Security: prevent access to parent window
     }
   };
 
   const acStatus = getACStatus(mosque.has_ac, mosque.ac_status);
   const cleanlinessStatus = getCleanlinessStatus(mosque.wudhu_cleanliness);
 
-  return (
-    <div
-      className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden hover:shadow-md transition-shadow duration-200 cursor-pointer"
-      onClick={handleCardClick}
-    >
+  // Content component to avoid duplication
+  const CardContent = () => (
+    <>
       {/* Image */}
       <div className="h-48 bg-gray-200 relative overflow-hidden">
         {mosque.image_url ? (
-          <img
+          <Image
             src={mosque.image_url}
             alt={mosque.name}
-            className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+            fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            className="object-cover transition-transform duration-300 hover:scale-105"
+            priority={false} // Set to true if this is above the fold
           />
         ) : (
           <div className="w-full h-full bg-gradient-to-br from-teal-400 to-teal-600 flex items-center justify-center">
@@ -80,6 +83,7 @@ export default function MosqueCard({ mosque, onClick }: MosqueCardProps) {
               className="w-16 h-16 text-white/80"
               fill="currentColor"
               viewBox="0 0 20 20"
+              aria-hidden="true"
             >
               <path d="M10 2L3 7v11h4v-6h6v6h4V7l-7-5z" />
             </svg>
@@ -119,6 +123,7 @@ export default function MosqueCard({ mosque, onClick }: MosqueCardProps) {
               className="w-4 h-4 mt-0.5 mr-2 text-gray-400 flex-shrink-0"
               fill="currentColor"
               viewBox="0 0 20 20"
+              aria-hidden="true"
             >
               <path
                 fillRule="evenodd"
@@ -141,6 +146,7 @@ export default function MosqueCard({ mosque, onClick }: MosqueCardProps) {
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
+                aria-hidden="true"
               >
                 <path
                   strokeLinecap="round"
@@ -161,6 +167,7 @@ export default function MosqueCard({ mosque, onClick }: MosqueCardProps) {
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
+                aria-hidden="true"
               >
                 <path
                   strokeLinecap="round"
@@ -223,12 +230,14 @@ export default function MosqueCard({ mosque, onClick }: MosqueCardProps) {
           <button
             onClick={handleDirectionsClick}
             className="flex-1 text-xs bg-teal-50 text-teal-700 px-3 py-2 rounded-md hover:bg-teal-100 transition-colors duration-200 font-medium"
+            type="button"
           >
             <svg
               className="w-3 h-3 inline mr-1"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
+              aria-hidden="true"
             >
               <path
                 strokeLinecap="round"
@@ -248,6 +257,27 @@ export default function MosqueCard({ mosque, onClick }: MosqueCardProps) {
           </p>
         </div>
       </div>
+    </>
+  );
+
+  // If detailsHref is provided, wrap with Link, otherwise use div with onClick
+  if (detailsHref) {
+    return (
+      <Link 
+        href={detailsHref}
+        className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden hover:shadow-md transition-shadow duration-200 cursor-pointer block"
+      >
+        <CardContent />
+      </Link>
+    );
+  }
+
+  return (
+    <div
+      className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden hover:shadow-md transition-shadow duration-200 cursor-pointer"
+      onClick={handleCardClick}
+    >
+      <CardContent />
     </div>
   );
 }

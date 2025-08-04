@@ -1,38 +1,12 @@
 import { useEffect } from "react";
+import Image from "next/image";
 import {
   CarParkingIcon,
   BikeParkingIcon,
   WheelchairIcon,
   PrayerMatIcon,
 } from "@/components/FacilityIcons";
-
-interface Mosque {
-  id: number;
-  name: string;
-  address: string;
-  distance?: number;
-  has_ac: boolean;
-  ac_status?: "working" | "broken" | "partial" | null;
-  wudhu_cleanliness:
-    | "very_clean"
-    | "clean"
-    | "average"
-    | "needs_cleaning"
-    | null;
-  parking_available: boolean;
-  bike_parking_available: boolean;
-  wheelchair_accessible: boolean;
-  prayer_mats_provided: boolean;
-  phone?: string;
-  website?: string;
-  google_maps_link?: string;
-  image_url?: string;
-  description?: string;
-  friday_khutbah_time?: string;
-  separate_wudhu_areas?: boolean;
-  shoe_storage?: string;
-  open_24_hours: boolean;
-}
+import { Mosque } from "@/types/Mosque";
 
 interface MosqueDetailModalProps {
   mosque: Mosque | null;
@@ -152,15 +126,17 @@ export default function MosqueDetailModal({
   };
 
   const handleDirectionsClick = () => {
+    // Guard against SSR
+    if (typeof window === 'undefined') return;
+    
     // Use google_maps_link if available, otherwise construct search query
-    if (mosque.google_maps_link) {
-      window.open(mosque.google_maps_link, "_blank");
-    } else {
-      const query = encodeURIComponent(mosque.address);
-      window.open(
-        `https://www.google.com/maps/search/?api=1&query=${query}`,
-        "_blank"
-      );
+    const mapsUrl = mosque.google_maps_link || 
+      `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(mosque.address)}`;
+    
+    // Open external link with security best practices
+    const newWindow = window.open(mapsUrl, "_blank");
+    if (newWindow) {
+      newWindow.opener = null; // Security: prevent access to parent window
     }
   };
 
@@ -182,12 +158,15 @@ export default function MosqueDetailModal({
           <button
             onClick={onClose}
             className="absolute top-4 right-4 z-10 bg-white/90 backdrop-blur-sm p-2 rounded-full shadow-lg hover:bg-white transition-colors"
+            type="button"
+            aria-label="Close modal"
           >
             <svg
               className="w-6 h-6 text-gray-600"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
+              aria-hidden="true"
             >
               <path
                 strokeLinecap="round"
@@ -203,10 +182,13 @@ export default function MosqueDetailModal({
             {/* Header Image */}
             <div className="h-64 md:h-80 bg-gray-200 relative">
               {mosque.image_url ? (
-                <img
+                <Image
                   src={mosque.image_url}
                   alt={mosque.name}
-                  className="w-full h-full object-cover"
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 60vw"
+                  className="object-cover"
+                  priority={true} // Modal images should load with priority
                 />
               ) : (
                 <div className="w-full h-full bg-gradient-to-br from-teal-400 to-teal-600 flex items-center justify-center">
@@ -214,6 +196,7 @@ export default function MosqueDetailModal({
                     className="w-24 h-24 text-white/80"
                     fill="currentColor"
                     viewBox="0 0 20 20"
+                    aria-hidden="true"
                   >
                     <path d="M10 2L3 7v11h4v-6h6v6h4V7l-7-5z" />
                   </svg>
@@ -254,6 +237,7 @@ export default function MosqueDetailModal({
                     className="w-5 h-5 mt-0.5 mr-2 text-gray-400 flex-shrink-0"
                     fill="currentColor"
                     viewBox="0 0 20 20"
+                    aria-hidden="true"
                   >
                     <path
                       fillRule="evenodd"
@@ -284,6 +268,7 @@ export default function MosqueDetailModal({
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
+                      aria-hidden="true"
                     >
                       <path
                         strokeLinecap="round"
@@ -310,6 +295,7 @@ export default function MosqueDetailModal({
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
+                      aria-hidden="true"
                     >
                       <path
                         strokeLinecap="round"
@@ -343,6 +329,7 @@ export default function MosqueDetailModal({
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
+                      aria-hidden="true"
                     >
                       <path
                         strokeLinecap="round"
@@ -489,6 +476,7 @@ export default function MosqueDetailModal({
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
+                      aria-hidden="true"
                     >
                       <path
                         strokeLinecap="round"
@@ -514,6 +502,7 @@ export default function MosqueDetailModal({
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
+                        aria-hidden="true"
                       >
                         <path
                           strokeLinecap="round"
@@ -539,12 +528,14 @@ export default function MosqueDetailModal({
                   <button
                     onClick={handleDirectionsClick}
                     className="flex-1 bg-teal-600 text-white px-6 py-3 rounded-lg hover:bg-teal-700 transition-colors font-medium flex items-center justify-center"
+                    type="button"
                   >
                     <svg
                       className="w-5 h-5 mr-2"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
+                      aria-hidden="true"
                     >
                       <path
                         strokeLinecap="round"
