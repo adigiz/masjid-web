@@ -164,27 +164,7 @@ export default function HomePage() {
                     <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-full transform -skew-x-12"></div>
                   </button>
                 </div>
-
-                {/* Features List */}
-                <div className="grid grid-cols-2 gap-3 lg:gap-4 pt-4 lg:pt-6">
-                  <div className="flex items-center space-x-2 text-white/80">
-                    <div className="w-2 h-2 bg-teal-400 rounded-full flex-shrink-0"></div>
-                    <span className="text-sm">Informasi AC</span>
-                  </div>
-                  <div className="flex items-center space-x-2 text-white/80">
-                    <div className="w-2 h-2 bg-teal-400 rounded-full flex-shrink-0"></div>
-                    <span className="text-sm">Kondisi Wudhu</span>
-                  </div>
-                  <div className="flex items-center space-x-2 text-white/80">
-                    <div className="w-2 h-2 bg-teal-400 rounded-full flex-shrink-0"></div>
-                    <span className="text-sm">Fasilitas Parkir</span>
-                  </div>
-                  <div className="flex items-center space-x-2 text-white/80">
-                    <div className="w-2 h-2 bg-teal-400 rounded-full flex-shrink-0"></div>
-                    <span className="text-sm">Aksesibilitas</span>
-                  </div>
                 </div>
-              </div>
 
               {/* Right Side - Image space (content flows naturally) */}
               <div className="hidden lg:block">
