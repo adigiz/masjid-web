@@ -1,6 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
-import { CarParkingIcon, BikeParkingIcon, WheelchairIcon, PrayerMatIcon } from "@/components/FacilityIcons";
+import {
+  CarParkingIcon,
+  BikeParkingIcon,
+  WheelchairIcon,
+  PrayerMatIcon,
+} from "@/components/FacilityIcons";
 import { Mosque } from "@/types/Mosque";
 
 interface MosqueCardProps {
@@ -9,7 +14,11 @@ interface MosqueCardProps {
   detailsHref?: string; // Optional: if you want to navigate to a details page
 }
 
-export default function MosqueCard({ mosque, onClick, detailsHref }: MosqueCardProps) {
+export default function MosqueCard({
+  mosque,
+  onClick,
+  detailsHref,
+}: MosqueCardProps) {
   const getACStatus = (hasAC: boolean, status?: string | null) => {
     if (!hasAC)
       return { text: "Tidak ada AC", color: "text-gray-500 bg-gray-100" };
@@ -48,11 +57,14 @@ export default function MosqueCard({ mosque, onClick, detailsHref }: MosqueCardP
 
   const handleDirectionsClick = (e: React.MouseEvent) => {
     e.stopPropagation();
-    
+
     // Use google_maps_link if available, otherwise construct search query
-    const mapsUrl = mosque.google_maps_link || 
-      `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(mosque.address)}`;
-    
+    const mapsUrl =
+      mosque.google_maps_link ||
+      `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
+        mosque.address
+      )}`;
+
     // Open external link with security best practices
     const newWindow = window.open(mapsUrl, "_blank");
     if (newWindow) {
@@ -142,19 +154,28 @@ export default function MosqueCard({ mosque, onClick, detailsHref }: MosqueCardP
               className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium ${acStatus.color}`}
             >
               <svg
-                className="w-3 h-3 mr-1"
+                className="w-5 h-5 mr-2 text-teal-600"
+                viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
-                viewBox="0 0 24 24"
-                aria-hidden="true"
+                strokeWidth={2}
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707"
-                />
+                {/* <!-- Unit AC utama --> */}
+                <rect x="3" y="4" width="18" height="6" rx="1" ry="1" />
+
+                {/* <!-- Ventilasi horizontal --> */}
+                <line x1="6" y1="7" x2="18" y2="7" />
+                <line x1="6" y1="9" x2="18" y2="9" />
+
+                {/* <!-- Tetesan udara dingin --> */}
+                <path d="M8 14v2" />
+                <path d="M12 14v3" />
+                <path d="M16 14v2.5" />
               </svg>
+
               {acStatus.text}
             </span>
           </div>
@@ -163,17 +184,54 @@ export default function MosqueCard({ mosque, onClick, detailsHref }: MosqueCardP
               className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium ${cleanlinessStatus.color}`}
             >
               <svg
-                className="w-3 h-3 mr-1"
+                className="w-5 h-5 mr-2 text-teal-600"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
                 aria-hidden="true"
               >
+                {/* Shower pipe vertical */}
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2.5}
+                  d="M8 3v8"
+                />
+
+                {/* Shower pipe horizontal */}
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2.5}
+                  d="M8 11h6"
+                />
+
+                {/* Shower head */}
+                <circle cx="14" cy="11" r="2.5" strokeWidth={2.5} />
+
+                {/* Water streams */}
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeWidth={2}
-                  d="M8 9l3 3-3 3m13 0h-6"
+                  d="M12 15v4M14 16v3M16 15v4"
+                  opacity="0.7"
+                />
+
+                {/* Water drops */}
+                <circle
+                  cx="13"
+                  cy="20"
+                  r="0.5"
+                  fill="currentColor"
+                  opacity="0.6"
+                />
+                <circle
+                  cx="15"
+                  cy="20.5"
+                  r="0.5"
+                  fill="currentColor"
+                  opacity="0.8"
                 />
               </svg>
               Wudhu: {cleanlinessStatus.text}
@@ -185,41 +243,55 @@ export default function MosqueCard({ mosque, onClick, detailsHref }: MosqueCardP
         <div className="grid grid-cols-2 gap-3 text-xs mb-4">
           <div className="flex items-center">
             <CarParkingIcon size="lg" available={mosque.parking_available} />
-            <span className={`ml-2 ${
-              mosque.parking_available 
-                ? "text-gray-700" 
-                : "text-gray-400 line-through"
-            }`}>
+            <span
+              className={`ml-2 ${
+                mosque.parking_available
+                  ? "text-gray-700"
+                  : "text-gray-400 line-through"
+              }`}
+            >
               Parkir Mobil
             </span>
           </div>
           <div className="flex items-center">
-            <BikeParkingIcon size="lg" available={mosque.bike_parking_available} />
-            <span className={`ml-2 ${
-              mosque.bike_parking_available 
-                ? "text-gray-700" 
-                : "text-gray-400 line-through"
-            }`}>
+            <BikeParkingIcon
+              size="lg"
+              available={mosque.bike_parking_available}
+            />
+            <span
+              className={`ml-2 ${
+                mosque.bike_parking_available
+                  ? "text-gray-700"
+                  : "text-gray-400 line-through"
+              }`}
+            >
               Parkir Motor
             </span>
           </div>
           <div className="flex items-center">
-            <WheelchairIcon size="lg" available={mosque.wheelchair_accessible} />
-            <span className={`ml-2 ${
-              mosque.wheelchair_accessible 
-                ? "text-gray-700" 
-                : "text-gray-400 line-through"
-            }`}>
+            <WheelchairIcon
+              size="lg"
+              available={mosque.wheelchair_accessible}
+            />
+            <span
+              className={`ml-2 ${
+                mosque.wheelchair_accessible
+                  ? "text-gray-700"
+                  : "text-gray-400 line-through"
+              }`}
+            >
               Wheelchair
             </span>
           </div>
           <div className="flex items-center">
             <PrayerMatIcon size="lg" available={mosque.prayer_mats_provided} />
-            <span className={`ml-2 ${
-              mosque.prayer_mats_provided 
-                ? "text-gray-700" 
-                : "text-gray-400 line-through"
-            }`}>
+            <span
+              className={`ml-2 ${
+                mosque.prayer_mats_provided
+                  ? "text-gray-700"
+                  : "text-gray-400 line-through"
+              }`}
+            >
               Sajadah
             </span>
           </div>
@@ -237,13 +309,19 @@ export default function MosqueCard({ mosque, onClick, detailsHref }: MosqueCardP
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
-              aria-hidden="true"
+              strokeWidth={2}
+              xmlns="http://www.w3.org/2000/svg"
             >
+              <path d="M12 2v20" strokeLinecap="round" strokeLinejoin="round" />
               <path
+                d="M12 6H5l-1.5 2L5 10h7V6z"
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                strokeWidth={2}
-                d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-1.447-.894L15 9m0 8V9m0 0V7"
+              />
+              <path
+                d="M12 14h7l1.5 2L19 18h-7v-4z"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               />
             </svg>
             Arah
@@ -263,7 +341,7 @@ export default function MosqueCard({ mosque, onClick, detailsHref }: MosqueCardP
   // If detailsHref is provided, wrap with Link, otherwise use div with onClick
   if (detailsHref) {
     return (
-      <Link 
+      <Link
         href={detailsHref}
         className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden hover:shadow-md transition-shadow duration-200 cursor-pointer block"
       >
