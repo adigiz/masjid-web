@@ -1,11 +1,15 @@
 // data/mockMosques.ts
 import { Mosque } from "@/types/Mosque";
 
-export const createMockMosques = (userLat: number, userLng: number): Mosque[] => [
+export const createMockMosques = (
+  userLat: number,
+  userLng: number
+): Mosque[] => [
   {
     id: 1,
-    name: "Masjid Agung Al-Azhar",
-    address: "Jl. Sisingamangaraja No.2, Jakarta Selatan",
+    name: "Masjid Fatahilah Bulak Rantai",
+    address:
+      "Jl. Bulak Rantai No.30, RT.4/RW.5, Kp. Tengah, Kec. Kramat jati, Kota Jakarta Timur",
     latitude: userLat + 0.008,
     longitude: userLng + 0.005,
     distance: 0.8,
@@ -19,10 +23,9 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
     separate_wudhu_areas: true,
     open_24_hours: true,
     phone: "021-1234567",
-    website: "https://al-azhar.or.id",
-    google_maps_link: "https://maps.app.goo.gl/ABC123xyz",
+    google_maps_link: "https://maps.app.goo.gl/uDJWxQTo4zTPkuF38",
     image_url:
-      "https://images.unsplash.com/photo-1564769662533-4f00a87b4056?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nqAAXZzcNijoOHSkUGr_BPGSc9gubvdR61obquOwXo_l7r-StSiwLaidoqqplsn8J4XG26GuYPSD4m4I_so2dLCcXmoOdLiM5yh7HYer_6ST3NIbT3KOJ8gsFiS5l9JxDwy_1Y=w408-h306-k-no",
     description:
       "Masjid Al-Azhar Jakarta adalah salah satu masjid terbesar dan paling modern di Jakarta Selatan. Dilengkapi dengan fasilitas lengkap dan program kegiatan keagamaan yang beragam.",
     friday_khutbah_time: "12:00",
@@ -30,8 +33,9 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
   },
   {
     id: 2,
-    name: "Masjid Al-Ikhlas",
-    address: "Jl. Kemang Raya No.45, Jakarta Selatan",
+    name: "Masjid Hidayatullah",
+    address:
+      "Jl. Masjid Hidayatullah No.3, RT.3/RW.4, Kuningan, Karet Semanggi, Kecamatan Setiabudi, Kota Jakarta Selatan",
     latitude: userLat - 0.012,
     longitude: userLng + 0.008,
     distance: 1.2,
@@ -45,9 +49,9 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
     separate_wudhu_areas: false,
     open_24_hours: false,
     phone: "021-2345678",
-    google_maps_link: "https://maps.app.goo.gl/DEF456abc",
+    google_maps_link: "https://maps.app.goo.gl/ZuR3qcymYEVYDzVE6",
     image_url:
-      "https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      "https://lh3.googleusercontent.com/gps-cs-s/AC9h4npHZX6zOiFWrkWKgYKB5mPoTOz0W5M9QqyTGsBamm8Acj_fY5JRsED3wNnkpTLCQVQ-JrT-Pwjj7bfWpKT-Ff-qDh8RdKVGTg9n6OrhzuAcGH6ThrpIaPng7nqqMbhWUMam3lNS=w426-h240-k-no",
     description:
       "Masjid lingkungan yang hangat dan ramah di kawasan Kemang. Aktif mengadakan kajian rutin dan program sosial untuk masyarakat sekitar.",
     friday_khutbah_time: "12:15",
@@ -55,8 +59,9 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
   },
   {
     id: 3,
-    name: "Masjid Nurul Huda",
-    address: "Jl. Blok M No.10, Jakarta Selatan",
+    name: "Masjid Ar-Rahmah BCI",
+    address:
+      "Jl. Rusun Bci Raya No.Kelurahan, RT.7/RW.16, Cengkareng Tim., Kecamatan Cengkareng, Kota Jakarta Barat",
     latitude: userLat + 0.015,
     longitude: userLng - 0.01,
     distance: 1.8,
@@ -69,8 +74,9 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
     prayer_mats_provided: false,
     separate_wudhu_areas: true,
     open_24_hours: false,
+    google_maps_link: "https://maps.app.goo.gl/odzBTgugfhvvQqj78",
     image_url:
-      "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nrOzJThERD55x_2rwmXtgxO6KBgKA7sRSr7UKvUIftBX9WU7tuekb2D6N7oQvJ6bX-ONKClt2DP8nVkAEVRuRuPE0ZDymaTFIsuL0FGwqPAJA3yrnTGqA0fXzvTNw5EKWShf7Zs=w408-h306-k-no",
     description:
       "Masjid sederhana namun nyaman dengan arsitektur tradisional. Terkenal dengan jamaah yang solid dan program tahfidz untuk anak-anak.",
     friday_khutbah_time: "12:30",
@@ -78,8 +84,9 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
   },
   {
     id: 4,
-    name: "Masjid At-Taubah",
-    address: "Jl. Fatmawati No.88, Jakarta Selatan",
+    name: "Masjid Ash-Shalihin",
+    address:
+      "Jl. Walang Baru Raya No.25, RT.7/RW.7, Tugu Utara, Kec. Koja, Jkt Utara",
     latitude: userLat - 0.018,
     longitude: userLng - 0.015,
     distance: 2.3,
@@ -93,10 +100,9 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
     separate_wudhu_areas: true,
     open_24_hours: true,
     phone: "021-7654321",
-    website: "https://at-taubah.org",
-    google_maps_link: "https://maps.app.goo.gl/GHI789def",
+    google_maps_link: "https://maps.app.goo.gl/rTmJYo7u9ez4M2UA7",
     image_url:
-      "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nq_wbfrFifRzpnTBx9grbxVWxUX3psnrZutuH35amiuIwDGTLDjU3ZXR5fGGNorag4Fg_R0zCoOtC0Y4tGoCp25k_PVSWPf9ZmED2dqhqyxBvHRyIXcAdvjdmmtL_OZ60FT71libg=w408-h544-k-no",
     description:
       "Masjid modern dengan desain kontemporer yang memadukan arsitektur Islam klasik dengan teknologi terkini. Menyediakan berbagai program pendidikan dan sosial.",
     friday_khutbah_time: "12:00",
@@ -104,8 +110,9 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
   },
   {
     id: 5,
-    name: "Masjid Ar-Rahman",
-    address: "Jl. Panglima Polim No.25, Jakarta Selatan",
+    name: "Masjid Jami' Nurul Rahman",
+    address:
+      "Jl. Mekar No.4 7, RT.7/RW.4, Tj. Bar., Kec. Jagakarsa, Kota Jakarta Selatan",
     latitude: userLat + 0.005,
     longitude: userLng + 0.012,
     distance: 0.9,
@@ -119,18 +126,19 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
     separate_wudhu_areas: true,
     open_24_hours: true,
     phone: "021-8765432",
-    google_maps_link: "https://maps.app.goo.gl/JKL012ghi",
+    google_maps_link: "https://maps.app.goo.gl/DtGT6Jf4KE1EPMwk7",
     image_url:
-      "https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nqFVbGX4XVtgXVCa45H-X7HyiXsDpPjy5h42GqOJ17Sx6Gsi6pyaGNyy8DaleS6tHKe3D0MN8uB0mmsbJqVJWxSYiWgH4xhyccCwPm0iZm1M4u12c4YiTKfum12yiYlzUnQMfY-Zg=w408-h306-k-no",
     description:
       "Masjid yang aktif dalam kegiatan sosial dan pendidikan. Menyediakan program pengajian untuk segala usia dan kegiatan amal untuk masyarakat kurang mampu.",
     friday_khutbah_time: "12:10",
     shoe_storage: "shelves",
   },
-     {
+  {
     id: 6,
     name: "Masjid Istiqlal",
-    address: "Jl. Taman Wijaya Kusuma, Kecamatan Sawah Besar, Kota Jakarta Pusat",
+    address:
+      "Jl. Taman Wijaya Kusuma, Kecamatan Sawah Besar, Kota Jakarta Pusat",
     latitude: -6.1701469,
     longitude: 106.8105029,
     distance: 1.8,
@@ -143,8 +151,9 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
     prayer_mats_provided: false,
     separate_wudhu_areas: true,
     open_24_hours: false,
+    google_maps_link: "https://maps.app.goo.gl/qnVriJBZF7G5JJ2c8",
     image_url:
-      "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nqkyx9Jxc_GylSWc3kaoS5FlEd2bAD46AOkutTVVSLUQTxk-MUccAZGDeeAdo3TxHwruQRTywwEInDquca4XTY6sJIrgJXyXdyEBiUjwvsZm5YXXNi2EN1sm2i_JjerZLaSnuhR=w408-h272-k-no",
     description:
       "Masjid sederhana namun nyaman dengan arsitektur tradisional. Terkenal dengan jamaah yang solid dan program tahfidz untuk anak-anak.",
     friday_khutbah_time: "12:30",
@@ -152,8 +161,9 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
   },
   {
     id: 7,
-    name: "Masjid Istiqlal",
-    address: "Jl. Taman Wijaya Kusuma, Kecamatan Sawah Besar, Kota Jakarta Pusat",
+    name: "Masjid Babah Alun Desari",
+    address:
+      "Jl. Mandala II Bawah No.100 4, RT.4/RW.2, Cilandak Bar., Kec. Cilandak, Kota Jakarta Selatan",
     latitude: -6.1701469,
     longitude: 106.8105029,
     distance: 1.8,
@@ -166,8 +176,9 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
     prayer_mats_provided: false,
     separate_wudhu_areas: true,
     open_24_hours: false,
+    google_maps_link: "https://maps.app.goo.gl/5EcQEdBGEAng5EDQA",
     image_url:
-      "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nooXP62gPGkT0lk60CWu9xLMDGEehwbLk4hKXzuSIUR0uI7wf9fnGSVdmflrdkN8kolgTWvPZHzuOzcKWXkVy7V_FrbEoPGNCsHFmbYpkY4TbJ1lGfNFiJKNkx2IJ80ke4EkptF=w408-h544-k-no",
     description:
       "Masjid sederhana namun nyaman dengan arsitektur tradisional. Terkenal dengan jamaah yang solid dan program tahfidz untuk anak-anak.",
     friday_khutbah_time: "12:30",
@@ -176,7 +187,8 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
   {
     id: 8,
     name: "Masjid Cut Meutia",
-    address: "Jl. Taman Cut Mutiah No.1 10, RT.10/RW.5, Kb. Sirih, Kec. Menteng, Kota Jakarta Pusat",
+    address:
+      "Jl. Taman Cut Mutiah No.1 10, RT.10/RW.5, Kb. Sirih, Kec. Menteng, Kota Jakarta Pusat",
     latitude: -6.1758686,
     longitude: 106.8090623,
     distance: 1.8,
@@ -189,8 +201,9 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
     prayer_mats_provided: false,
     separate_wudhu_areas: true,
     open_24_hours: false,
+    google_maps_link: "https://maps.app.goo.gl/nteFdm5JCFzLNDJg7",
     image_url:
-      "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nqXg48X4Sr9by77ZR5S6vjzORi69gJ3iFLFjYqKVAx97tNaAvztCZPELGt_9Y2NckgLG_mu2YBuO3ft1LbO5sqdbA0_-btcXphNdfQRIuQyCgVNj6TN7GM7NiTw7cGRGeSGLgxD=w408-h544-k-no",
     description:
       "Masjid sederhana namun nyaman dengan arsitektur tradisional. Terkenal dengan jamaah yang solid dan program tahfidz untuk anak-anak.",
     friday_khutbah_time: "12:30",
@@ -199,7 +212,8 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
   {
     id: 9,
     name: "Masjid Jami' Kampung Baru Inpak",
-    address: "Jl. Bandengan Selatan-Utara,Jakbar., RT.12/RW.5, Pekojan, Kec. Tambora, Kota Jakarta Barat",
+    address:
+      "Jl. Bandengan Selatan-Utara,Jakbar., RT.12/RW.5, Pekojan, Kec. Tambora, Kota Jakarta Barat",
     latitude: -6.1366121,
     longitude: 106.7652578,
     distance: 1.8,
@@ -212,8 +226,9 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
     prayer_mats_provided: false,
     separate_wudhu_areas: true,
     open_24_hours: false,
+    google_maps_link: "https://maps.app.goo.gl/usCXwBMFUDVpqrGcA",
     image_url:
-      "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nrcTD0ApNym-nRZpNyhXD1AdoxQ-G9-QvghLKk_rbeFqwZm3qmirsPuLSBFg5aUm9xdGhUa3WJUF-vPHUBh1KUnusrB69y9EBKZwf6ZjmqIeycn1jyvxvbDIJvo2gzq5jGPdfza=w408-h544-k-no",
     description:
       "Masjid sederhana namun nyaman dengan arsitektur tradisional. Terkenal dengan jamaah yang solid dan program tahfidz untuk anak-anak.",
     friday_khutbah_time: "12:30",
@@ -222,7 +237,8 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
   {
     id: 10,
     name: "Masjid Jami Al Mansur",
-    address: "Jl. KH.Moh.Mansyur No.185, RT.4/RW.1, Jemb. Lima, Kec. Tambora, Kota Jakarta Barat",
+    address:
+      "Jl. KH.Moh.Mansyur No.185, RT.4/RW.1, Jemb. Lima, Kec. Tambora, Kota Jakarta Barat",
     latitude: -6.1469516,
     longitude: 106.7955049,
     distance: 1.8,
@@ -235,8 +251,9 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
     prayer_mats_provided: false,
     separate_wudhu_areas: true,
     open_24_hours: false,
+    google_maps_link: "https://maps.app.goo.gl/wDPwdgPFyNPeYni37",
     image_url:
-      "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      "https://lh3.googleusercontent.com/gps-cs-s/AC9h4npEsfF9wLayqzkewLWGaYyCQbnM9W8d-n-t7xmv4PUBR5s62n_OeLasDpkh4X0nI1ZrUDsVzdq5lEKgbSb9UN-zoZYwD64BiD6Fk-_z8c_gb5j4mex7Nipqb93VszcEtFZFqaw6=w408-h544-k-no",
     description:
       "Masjid sederhana namun nyaman dengan arsitektur tradisional. Terkenal dengan jamaah yang solid dan program tahfidz untuk anak-anak.",
     friday_khutbah_time: "12:30",
@@ -245,7 +262,8 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
   {
     id: 11,
     name: "Masjid Jami' Angke Al-Anwar",
-    address: "Jl. Pangeran Tubagus Angke Gg. Masjid I No.1, Angke, Kec. Tambora, Kota Jakarta Barat",
+    address:
+      "Jl. Pangeran Tubagus Angke Gg. Masjid I No.1, Angke, Kec. Tambora, Kota Jakarta Barat",
     latitude: -6.1431242,
     longitude: 106.7922183,
     distance: 1.8,
@@ -258,8 +276,9 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
     prayer_mats_provided: false,
     separate_wudhu_areas: true,
     open_24_hours: false,
+    google_maps_link: "https://maps.app.goo.gl/9f9v3ni1Gc5PsPANA",
     image_url:
-      "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nr1GSICOC56i1dI2G9CKgYReij5j2_rqvt0wLFymGel3IfjIlgV7wqomfHrs8Ccmn1dDBpr1xMqpgWWhxUdK1RIRe5i93_NoTsfYOPZtR19XR9wuzQX30nRsz35HxlptNmFudmdoA=w408-h544-k-no",
     description:
       "Masjid sederhana namun nyaman dengan arsitektur tradisional. Terkenal dengan jamaah yang solid dan program tahfidz untuk anak-anak.",
     friday_khutbah_time: "12:30",
@@ -268,7 +287,8 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
   {
     id: 12,
     name: "Masjid Al-Anshor",
-    address: "Jl. Pengukiran II No.61, RT.7/RW.4, Pekojan, Kec. Tambora, Kota Jakarta Barat",
+    address:
+      "Jl. Pengukiran II No.61, RT.7/RW.4, Pekojan, Kec. Tambora, Kota Jakarta Barat",
     latitude: -6.1388659,
     longitude: 106.8055064,
     distance: 1.8,
@@ -281,8 +301,9 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
     prayer_mats_provided: false,
     separate_wudhu_areas: true,
     open_24_hours: false,
+    google_maps_link: "https://maps.app.goo.gl/9adEVKxAEqf41ChK9",
     image_url:
-      "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nrX2waJrf3LmWbQBQLruVjewbo9E7DI0VaaEC8Puym2DGgLUhfLGJ2xDZ5108aj97WddovdBcR7tQ_U2EFTC1akzQYH1LgFbyzkO-yMYXIAj8DaXey9R00QLOT7zZGkudtNFaj1iQ=w408-h544-k-no",
     description:
       "Masjid sederhana namun nyaman dengan arsitektur tradisional. Terkenal dengan jamaah yang solid dan program tahfidz untuk anak-anak.",
     friday_khutbah_time: "12:30",
@@ -304,8 +325,9 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
     prayer_mats_provided: false,
     separate_wudhu_areas: true,
     open_24_hours: false,
+    google_maps_link: "https://maps.app.goo.gl/D3tPw6r9QfpgTGFAA",
     image_url:
-      "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      "https://lh3.googleusercontent.com/gps-proxy/ALd4DhG2EeVRqKNnURqRkCGO9KQfzK6j0WLrccubcTqgxodlhnKjfzm0tsMWNbryEDP64YByqnjscbnVEGkgmjHNX4d-V9Nvd1AitRhqRoqv6i-9l2SRDFWry7n14AvNRulFbW3znY-FO6rMRHlRiXo0plecHA0b3YWaGjUBZBzWRXfGQeKfO375S-IzlrIgUYc0q6jGfEQ=w408-h544-k-no",
     description:
       "Masjid sederhana namun nyaman dengan arsitektur tradisional. Terkenal dengan jamaah yang solid dan program tahfidz untuk anak-anak.",
     friday_khutbah_time: "12:30",
@@ -314,7 +336,8 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
   {
     id: 14,
     name: "Masjid Agung Sunda Kelapa",
-    address: "Jl. Taman Sunda Kelapa No.16, Menteng, Kec. Menteng, Kota Jakarta Pusat",
+    address:
+      "Jl. Taman Sunda Kelapa No.16, Menteng, Kec. Menteng, Kota Jakarta Pusat",
     latitude: -6.1971209,
     longitude: 106.8082541,
     distance: 1.8,
@@ -327,8 +350,9 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
     prayer_mats_provided: false,
     separate_wudhu_areas: true,
     open_24_hours: false,
+    google_maps_link: "https://maps.app.goo.gl/zyLh8MFpDc6Vju888",
     image_url:
-      "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      "https://lh3.googleusercontent.com/gps-cs-s/AC9h4noxm08f9p_7cPS_itwfcUo0u5H8mIJk4d9yl3TJbC6Ukrm7IrZa-WkDVMaEMsYf6k-v9XfWENF_HJ-XSjEaRquJhxdpeFmfz32ncqBrqTVFS2a-RQb-CWrIq07YvM-J_xYOl327=w408-h544-k-no",
     description:
       "Masjid sederhana namun nyaman dengan arsitektur tradisional. Terkenal dengan jamaah yang solid dan program tahfidz untuk anak-anak.",
     friday_khutbah_time: "12:30",
@@ -337,7 +361,8 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
   {
     id: 15,
     name: "Masjid Al Fattah",
-    address: "Jl. Jatinegara Timur No.48 14, RT.14/RW.50, Kecamatan Jatinegara, Kota Jakarta Timur",
+    address:
+      "Jl. Jatinegara Timur No.48 14, RT.14/RW.50, Kecamatan Jatinegara, Kota Jakarta Timur",
     latitude: -6.2192665,
     longitude: 106.8082541,
     distance: 1.8,
@@ -350,8 +375,9 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
     prayer_mats_provided: false,
     separate_wudhu_areas: true,
     open_24_hours: false,
+    google_maps_link: "https://maps.app.goo.gl/RVpacm62vh6WcNGx6",
     image_url:
-      "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      "https://lh3.googleusercontent.com/gps-cs-s/AC9h4noGxAm0rzPzYEQqn61Vzwlxg2qJIjubhihN5GXqn_k-KDv5pJcFCCtzfEAxFTYSdkxtbCCYrEde5KNh3lE7XGWEoC0sBkxWQxR_Averuq2HdLW_8i5iQilmWsjAK2To4oeQNaF7Fg=w408-h544-k-no ",
     description:
       "Masjid sederhana namun nyaman dengan arsitektur tradisional. Terkenal dengan jamaah yang solid dan program tahfidz untuk anak-anak.",
     friday_khutbah_time: "12:30",
@@ -360,7 +386,8 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
   {
     id: 16,
     name: "Masjid Ramlie Musofa",
-    address: "Jl. Danau Sunter Utara Raya Selatan No.12C, RT.13/RW.16, Sunter Agung, Kec. Tj. Priok, Jkt Utara",
+    address:
+      "Jl. Danau Sunter Utara Raya Selatan No.12C, RT.13/RW.16, Sunter Agung, Kec. Tj. Priok, Jkt Utara",
     latitude: -6.1461504,
     longitude: 106.8592493,
     distance: 1.8,
@@ -373,8 +400,9 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
     prayer_mats_provided: false,
     separate_wudhu_areas: true,
     open_24_hours: false,
+    google_maps_link: "https://maps.app.goo.gl/xP1VDRz4iKpj588c6",
     image_url:
-      "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nqILbetpSN42nzumTiGvNyp87Co9b-_tiwqE_xZ4CdS7ph_baDEmNPz8jjLFiN04WrPuvN9xjNTQzt8Dl-GD3WN25V7g3AgcKq2Xjsm3lcEp7LCy7ePZMwAVOD0ZAR4_Vl2DELM=w408-h544-k-no",
     description:
       "Masjid sederhana namun nyaman dengan arsitektur tradisional. Terkenal dengan jamaah yang solid dan program tahfidz untuk anak-anak.",
     friday_khutbah_time: "12:30",
@@ -383,7 +411,8 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
   {
     id: 17,
     name: "Masjid Jami' Al-Muawanah",
-    address: "Jl. Masjid Al Mu'awanah No.50 RT.8/RW.7, Srengseng Sawah, Kec. Jagakarsa, Kota Jakarta Selatan",
+    address:
+      "Jl. Masjid Al Mu'awanah No.50 RT.8/RW.7, Srengseng Sawah, Kec. Jagakarsa, Kota Jakarta Selatan",
     latitude: -6.3556369,
     longitude: 106.7990861,
     distance: 1.8,
@@ -396,8 +425,9 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
     prayer_mats_provided: false,
     separate_wudhu_areas: true,
     open_24_hours: false,
+    google_maps_link: "https://maps.app.goo.gl/PJFmLmKwXi2HH4cV7",
     image_url:
-      "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nr2LzQCym_vl1mLktTXI4HQlN81IaAuGiXCfZIuiVzFACldjdcpFeoLxF9KGWoQzTpeiNbZ6ASU9tBEirj8F5dh7EtxMJNcixpInFxIb31jX9yWFAEIOWAss1fOF4BiBofTJSmI=w408-h544-k-no",
     description:
       "Masjid sederhana namun nyaman dengan arsitektur tradisional. Terkenal dengan jamaah yang solid dan program tahfidz untuk anak-anak.",
     friday_khutbah_time: "12:30",
@@ -406,7 +436,8 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
   {
     id: 18,
     name: "Masjid Al Ma'mur",
-    address: "Gg. Masjid Dalam No.50, RT.1/RW.12, Gandaria Utara, Kec. Kby. Baru, Kota Jakarta Selatan",
+    address:
+      "Gg. Masjid Dalam No.50, RT.1/RW.12, Gandaria Utara, Kec. Kby. Baru, Kota Jakarta Selatan",
     latitude: -6.2532226,
     longitude: 106.7743431,
     distance: 1.8,
@@ -419,8 +450,9 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
     prayer_mats_provided: false,
     separate_wudhu_areas: true,
     open_24_hours: false,
+    google_maps_link: "https://maps.app.goo.gl/amhga2wDRdJLNpFH7",
     image_url:
-      "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nq9hfeGtsveahW27CVjYgmW1MRMEVebZ56S6lEvaghLotFpO1VH9-Izi2P5U7T8wkaBHD0CO99ZV5IMn7mRT3BZzAbmPvXYzO32b2X8pUBxhDGFH4q5KMHbmNBk8ULtThcPd2ORwQ=w408-h544-k-no",
     description:
       "Masjid sederhana namun nyaman dengan arsitektur tradisional. Terkenal dengan jamaah yang solid dan program tahfidz untuk anak-anak.",
     friday_khutbah_time: "12:30",
@@ -429,7 +461,8 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
   {
     id: 19,
     name: "Masjid Agung At-Tin",
-    address: "Jl. Taman Mini I No.3, RW.3, Pinang Ranti, Kec. Makasar, Kota Jakarta Timur",
+    address:
+      "Jl. Taman Mini I No.3, RW.3, Pinang Ranti, Kec. Makasar, Kota Jakarta Timur",
     latitude: -6.2977165,
     longitude: 106.8650868,
     distance: 1.8,
@@ -442,8 +475,9 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
     prayer_mats_provided: false,
     separate_wudhu_areas: true,
     open_24_hours: false,
+    google_maps_link: "https://maps.app.goo.gl/1mPaCNABZJ93dxhZA",
     image_url:
-      "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      "https://lh3.googleusercontent.com/gps-cs-s/AC9h4noGotUQimUG0oHpjPP8L4cPeINa2366fVktMdKK1UZXSMt9S0S66l_hk-cX70s1__9XEaqb32c5OGN_rcdDibPNWxWbM2sQFXABRtL7SBt7Emupml4DIRoCERPys8eElyI_ewTd=w408-h544-k-no",
     description:
       "Masjid sederhana namun nyaman dengan arsitektur tradisional. Terkenal dengan jamaah yang solid dan program tahfidz untuk anak-anak.",
     friday_khutbah_time: "12:30",
@@ -452,7 +486,8 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
   {
     id: 20,
     name: "Masjid Jami Al Ma'mur, Kebon Kacang",
-    address: "Jl. K.H. Mas Mansyur No.6, RT.14/RW.7, Kb. Kacang, Kecamatan Tanah Abang, Kota Jakarta Pusat",
+    address:
+      "Jl. K.H. Mas Mansyur No.6, RT.14/RW.7, Kb. Kacang, Kecamatan Tanah Abang, Kota Jakarta Pusat",
     latitude: -6.1889099,
     longitude: 106.8123045,
     distance: 1.8,
@@ -465,8 +500,9 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
     prayer_mats_provided: false,
     separate_wudhu_areas: true,
     open_24_hours: false,
+    google_maps_link: "https://maps.app.goo.gl/zHWpTLUbQ9mJNszd6",
     image_url:
-      "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nrIxlnu4ZkDIbdhV38iIBsx8Ad96IW4oPyRZ0LQqbtvtz0rwmK2wq_LRthj6s5p3RYntxiN_D38nTati4wr-LTaMj3al7VnXPW7pv1hNbZk8fbq3ZQm_QNj1cqWP4EjilsJnoQm1w=w408-h544-k-no",
     description:
       "Masjid sederhana namun nyaman dengan arsitektur tradisional. Terkenal dengan jamaah yang solid dan program tahfidz untuk anak-anak.",
     friday_khutbah_time: "12:30",
@@ -475,7 +511,8 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
   {
     id: 21,
     name: "Masjid Agung Al-Azhar",
-    address: "Jl. Sisingamangaraja No.1, RT.2/RW.1, Selong, Kec. Kby. Baru, Kota Jakarta Selatan",
+    address:
+      "Jl. Sisingamangaraja No.1, RT.2/RW.1, Selong, Kec. Kby. Baru, Kota Jakarta Selatan",
     latitude: -6.2351814,
     longitude: 106.7802349,
     distance: 1.8,
@@ -488,8 +525,9 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
     prayer_mats_provided: false,
     separate_wudhu_areas: true,
     open_24_hours: false,
+    google_maps_link: "https://maps.app.goo.gl/Jsx9DLDieYJo63SRA",
     image_url:
-      "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nqz_ECLp8oMxuJmuUTh9Bj3iSys8rNEJYEyvRWg-npAs0Taz4CG2MBlVfBW8aZ8ysDatStZQ28VR3F9v5bhAnseX-eWp0FI3yAtFLzeutQqEO4Int5CEhLLT3T0ppJ-w2wU4xImPA=w408-h544-k-no",
     description:
       "Masjid sederhana namun nyaman dengan arsitektur tradisional. Terkenal dengan jamaah yang solid dan program tahfidz untuk anak-anak.",
     friday_khutbah_time: "12:30",
@@ -497,8 +535,9 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
   },
   {
     id: 22,
-    name: "Masjid Cut Meutia",
-    address: "Jl. Taman Cut Mutiah No.1 10, RT.10/RW.5, Kb. Sirih, Kec. Menteng, Kota Jakarta Pusat",
+    name: "Masjid Al Hawi Condet",
+    address:
+      "Jalan Raya Condet, Gang Masjid Al Hawi II RT. 05 / RW. 05, Cililitan, Kramatjati RT.6, Jl. Raya Condet No.29, RT.6/RW.5, Cililitan, Kec. Kramat jati, Kota Jakarta Timur,",
     latitude: -6.1872687,
     longitude: 106.8142497,
     distance: 1.8,
@@ -511,8 +550,9 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
     prayer_mats_provided: false,
     separate_wudhu_areas: true,
     open_24_hours: false,
+    google_maps_link: "https://maps.app.goo.gl/y1kqGH8sBP7PvfZb9",
     image_url:
-      "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      "https://lh3.googleusercontent.com/gps-cs-s/AC9h4not1IRUbhHkVLg7wulP34UuWABGgkO5dMLu2WodULojkAAo0oetmfOcQCZc2xG_EOM5uWxfp28tc-Y_23ySkqXpIjO_-6TzdeTX-cHLPtQFFRhZTQOEfhbESMDnjhraFNaaK5OSag=w408-h544-k-no",
     description:
       "Masjid sederhana namun nyaman dengan arsitektur tradisional. Terkenal dengan jamaah yang solid dan program tahfidz untuk anak-anak.",
     friday_khutbah_time: "12:30",
@@ -521,7 +561,8 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
   {
     id: 23,
     name: "Masjid Al Ma'mur",
-    address: "Gg. Masjid Dalam No.50, RT.1/RW.12, Gandaria Utara, Kec. Kby. Baru, Kota Jakarta Selatan",
+    address:
+      "Gg. Masjid Dalam No.50, RT.1/RW.12, Gandaria Utara, Kec. Kby. Baru, Kota Jakarta Selatan",
     latitude: -6.2532226,
     longitude: 106.7583786,
     distance: 1.8,
@@ -534,8 +575,9 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
     prayer_mats_provided: false,
     separate_wudhu_areas: true,
     open_24_hours: false,
+    google_maps_link: "https://maps.app.goo.gl/J4G2w32Qu1wHtoio9",
     image_url:
-      "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nqtiul9T4Ub7hMZpUbSljoCUFLW_nFWvG7xO-ya45aLZDVageEmm37dOZ9Dyup23hjkimj60J0Di-4t3oVFWVgkpwnI5cgBLwB3U1tIWqurrImhi79ToEGa2EXUqDr_nt-tzCt8=w408-h544-k-no",
     description:
       "Masjid sederhana namun nyaman dengan arsitektur tradisional. Terkenal dengan jamaah yang solid dan program tahfidz untuk anak-anak.",
     friday_khutbah_time: "12:30",
@@ -544,7 +586,8 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
   {
     id: 24,
     name: "Masjid Jami' Ar-Ridhwan Jati Padang Raya",
-    address: "Jl. Masjid Al Ridwan No.50 6, RT.6/RW.9, Jati Padang, Ps. Minggu, Kota Jakarta Selatan",
+    address:
+      "Jl. Masjid Al Ridwan No.50 6, RT.6/RW.9, Jati Padang, Ps. Minggu, Kota Jakarta Selatan",
     latitude: -6.2911452,
     longitude: 106.8195057,
     distance: 1.8,
@@ -557,8 +600,9 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
     prayer_mats_provided: false,
     separate_wudhu_areas: true,
     open_24_hours: false,
+    google_maps_link: "https://maps.app.goo.gl/dbdVzL8ReD6zpxxa8",
     image_url:
-      "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nqn5UeMys80gKe7PW8AzCrUy8dRZFY4Gdrc4bnyjlb6OHtFXaJ7Rur8W-JaXvnsFWhEEqbK5KKbWQCedI2pDcMdCo6JFJkVA1Wh-I85njKXMnyCqP4VHoK4ZtUioCleof5irSc9=w408-h544-k-no",
     description:
       "Masjid sederhana namun nyaman dengan arsitektur tradisional. Terkenal dengan jamaah yang solid dan program tahfidz untuk anak-anak.",
     friday_khutbah_time: "12:30",
@@ -567,7 +611,8 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
   {
     id: 25,
     name: "Masjid Jami' Al Atiq",
-    address: "Jl. Kp. Melayu Besar Jl. Mesjid 1, RT.1/RW.1, Kb. Baru, Kec. Tebet, Kota Jakarta Selatan",
+    address:
+      "Jl. Kp. Melayu Besar Jl. Mesjid 1, RT.1/RW.1, Kb. Baru, Kec. Tebet, Kota Jakarta Selatan",
     latitude: -6.2260674,
     longitude: 106.8517486,
     distance: 1.8,
@@ -580,8 +625,9 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
     prayer_mats_provided: false,
     separate_wudhu_areas: true,
     open_24_hours: false,
+    google_maps_link: "https://maps.app.goo.gl/ZGbvhF72qurk82mH7",
     image_url:
-      "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      "https://lh3.googleusercontent.com/gps-cs-s/AC9h4noy7fbJAIwrBZx9zl4r9xv56xwxDAn1BT466AaLxl2cau7r3ckabW7jTkFKCIIQp-BfVwDOT0H8_6KAf-WSNq3nB3ZdLWcPYDgrBAxiBBoE56g3rORmaYTMIu4lsKMwjr-W4YhrgQ=w408-h544-k-no",
     description:
       "Masjid sederhana namun nyaman dengan arsitektur tradisional. Terkenal dengan jamaah yang solid dan program tahfidz untuk anak-anak.",
     friday_khutbah_time: "12:30",
@@ -590,11 +636,12 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
   {
     id: 26,
     name: "Masjid Jami' Cikini Al Ma'mur",
-    address: "Jl. Raden Saleh Raya No.30, RT.3/RW.3, Cikini, Kec. Menteng, Kota Jakarta Pusat",
+    address:
+      "Jl. Raden Saleh Raya No.30, RT.3/RW.3, Cikini, Kec. Menteng, Kota Jakarta Pusat",
     latitude: -6.1908461,
     longitude: 106.8268218,
     distance: 1.8,
-    has_ac: false, 
+    has_ac: false,
     ac_status: null,
     wudhu_cleanliness: "average",
     parking_available: true,
@@ -603,8 +650,9 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
     prayer_mats_provided: false,
     separate_wudhu_areas: true,
     open_24_hours: false,
+    google_maps_link: "https://maps.app.goo.gl/ThtysTb2Vsw4bivs6",
     image_url:
-      "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nraKf_I_xuA2Ziz294vBjHw8fEjsTE0oAW2LPyUNpyNwJKAcvMpO28mtoIEX7hNuMPsooQIHmV-6ho462F6JM0lNx_PcBZ2fVu2urZJovGbferFdbHf0RRLAazxbPhm7BLQs-fN=w408-h544-k-no",
     description:
       "Masjid sederhana namun nyaman dengan arsitektur tradisional. Terkenal dengan jamaah yang solid dan program tahfidz untuk anak-anak.",
     friday_khutbah_time: "12:30",
@@ -613,7 +661,8 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
   {
     id: 27,
     name: "Masjid Agung Al-Munada Darussalam Baiturrahman",
-    address: "Jl. Raya Casablanca No.38, RT.3/RW.5, Menteng Dalam, Kec. Tebet, Kota Jakarta Selatan",
+    address:
+      "Jl. Raya Casablanca No.38, RT.3/RW.5, Menteng Dalam, Kec. Tebet, Kota Jakarta Selatan",
     latitude: -6.2226479,
     longitude: 106.8323737,
     distance: 1.8,
@@ -626,8 +675,9 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
     prayer_mats_provided: false,
     separate_wudhu_areas: true,
     open_24_hours: false,
+    google_maps_link: "https://maps.app.goo.gl/2QnQ3EoRtAyX2UoQ8",
     image_url:
-      "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      "https://lh3.googleusercontent.com/gps-cs-s/AC9h4noRt6M6hYVlodVn4I9nGwE9StJFP0UKMe2O4W0S4AB8CrfnpH9PbjPTBQqb9ZGFwmazMkKAtl2AryZShwHvSQRAmXeLE1T0O7G4vMxzLpm7xjlLXT-8cN-FI_flx4CVtEKLKQO1cA=w408-h544-k-no",
     description:
       "Masjid sederhana namun nyaman dengan arsitektur tradisional. Terkenal dengan jamaah yang solid dan program tahfidz untuk anak-anak.",
     friday_khutbah_time: "12:30",
@@ -636,7 +686,8 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
   {
     id: 28,
     name: "MMasjid Jami' Baiturrahman Duren Sawit",
-    address: "Jl. Lingkar PTB, Duren Sawit, Kec. Duren Sawit, Kota Jakarta Timur",
+    address:
+      "Jl. Lingkar PTB, Duren Sawit, Kec. Duren Sawit, Kota Jakarta Timur",
     latitude: -6.2259199,
     longitude: 106.9029257,
     distance: 1.8,
@@ -649,8 +700,9 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
     prayer_mats_provided: false,
     separate_wudhu_areas: true,
     open_24_hours: false,
+    google_maps_link: "https://maps.app.goo.gl/e3rjLdJJ1W544hRi9",
     image_url:
-      "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      "https://lh3.googleusercontent.com/gps-cs-s/AC9h4npxmTKA0gbDKBr130nWt2y5KipQve911bURqpxJd5SYc4ihHfngoRPfYW52gXg8aWDEJzeoQt_XJvENUMKt6BJAJ_N57kmIz4Bz6AeOdBYxnjjMe0RmYmkdd73NRQATPmH0z1vpCg=w408-h544-k-no",
     description:
       "Masjid sederhana namun nyaman dengan arsitektur tradisional. Terkenal dengan jamaah yang solid dan program tahfidz untuk anak-anak.",
     friday_khutbah_time: "12:30",
@@ -659,7 +711,8 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
   {
     id: 29,
     name: "Masjid Jami Baitul Mughni",
-    address: "Jl. Peltu Rahmat Sidup No.29, RT.3/RW.3,Kuningan Tim., Kecamatan Setiabudi, Kota Jakarta Selatan",
+    address:
+      "Jl. Peltu Rahmat Sidup No.29, RT.3/RW.3,Kuningan Tim., Kecamatan Setiabudi, Kota Jakarta Selatan",
     latitude: -6.2309499,
     longitude: 106.8060896,
     distance: 1.8,
@@ -672,8 +725,9 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
     prayer_mats_provided: false,
     separate_wudhu_areas: true,
     open_24_hours: false,
+    google_maps_link: "https://maps.app.goo.gl/1xPgtBTwZTnY4TRb8",
     image_url:
-      "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      "https://lh3.googleusercontent.com/gps-cs-s/AC9h4npwDZIffgti3O-61eeIAGloHIQmaU2By1s4rwNYH7zFjB99cbyCnSzB8jEG4GSFlJ4Nz95XPXCYKOU_Rw8XOG9mer9JP4h_tmDMltlARgiwA-FUP9pHbB3hUH6Cm3VzmgfTdS9U=w408-h544-k-no",
     description:
       "Masjid sederhana namun nyaman dengan arsitektur tradisional. Terkenal dengan jamaah yang solid dan program tahfidz untuk anak-anak.",
     friday_khutbah_time: "12:30",
@@ -682,9 +736,10 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
   {
     id: 30,
     name: "Masjid Jami' Angke Al-Anwar",
-    address: "Jl. Pangeran Tubagus Angke Gg. Masjid I No.1, RT.1/RW.5, Kec. Tambora, Kota Jakarta Barat",
+    address:
+      "Jl. Pangeran Tubagus Angke Gg. Masjid I No.1, RT.1/RW.5, Kec. Tambora, Kota Jakarta Barat",
     latitude: -6.1432003,
-    longitude:106.7799035,
+    longitude: 106.7799035,
     distance: 1.8,
     has_ac: false,
     ac_status: null,
@@ -695,8 +750,9 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
     prayer_mats_provided: false,
     separate_wudhu_areas: true,
     open_24_hours: false,
+    google_maps_link: "https://maps.app.goo.gl/EtpH4SLrvaYtwiF38",
     image_url:
-      "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nreoILIxzG4RTK4i-gDOZJdJEldhLKecRdd7aFv3EZSRDyuf8QQbE2LJDKIb6nrcAMk6JSKyL_jBn252bHtWTQTyy1lfAwyxKl_IicGeZbv4XXnImr0TJnYrYcSJHOiim33LmLPSg=w408-h544-k-no",
     description:
       "Masjid sederhana namun nyaman dengan arsitektur tradisional. Terkenal dengan jamaah yang solid dan program tahfidz untuk anak-anak.",
     friday_khutbah_time: "12:30",
@@ -705,7 +761,8 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
   {
     id: 31,
     name: "Masjid Jami' Baitul Makmur",
-    address: "Jl. Ampera Raya Jakarta Selatan No.50 A, RT.2/RW.9, Ragunan, Ps. Minggu, Kota Jakarta Selatan",
+    address:
+      "Jl. Ampera Raya Jakarta Selatan No.50 A, RT.2/RW.9, Ragunan, Ps. Minggu, Kota Jakarta Selatan",
     latitude: -6.2856702,
     longitude: 106.8034684,
     distance: 1.8,
@@ -718,8 +775,9 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
     prayer_mats_provided: false,
     separate_wudhu_areas: true,
     open_24_hours: false,
+    google_maps_link: "https://maps.app.goo.gl/yXLGBU2cfQ8qZw7A6",
     image_url:
-      "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nqQ46FCdzhL1COGyoI1BWoX4eNxpH2rZpk48nMgsB-GKdzDFXrAIRdLUBnB_eXQpZzzKV2hsKJtrWijXUyNBUQ8QEPn_4wOlqmgYmVRW71rcMH0ooL6nQxyDRuOt3xM5D2SmMU=w408-h544-k-no",
     description:
       "Masjid sederhana namun nyaman dengan arsitektur tradisional. Terkenal dengan jamaah yang solid dan program tahfidz untuk anak-anak.",
     friday_khutbah_time: "12:30",
@@ -728,7 +786,8 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
   {
     id: 32,
     name: "Masjid Jami' Annawier",
-    address: "Jl. Pekojan Raya No.71, RT.3/RW.1, Pekojan, Kec. Tambora, Kota Jakarta Barat",
+    address:
+      "Jl. Pekojan Raya No.71, RT.3/RW.1, Pekojan, Kec. Tambora, Kota Jakarta Barat",
     latitude: -6.1411747,
     longitude: 106.7914146,
     distance: 1.8,
@@ -741,8 +800,9 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
     prayer_mats_provided: false,
     separate_wudhu_areas: true,
     open_24_hours: false,
+    google_maps_link: "https://maps.app.goo.gl/b8rCJrQaAbZCQsUv7",
     image_url:
-      "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nqXuvXu0XZynNAQhlAOy7ocqTSaX45rjOtz1p2WBsUimhmbFSJ-OHKTBfBq4kTWjLNJofaW_M0kmuSAnCHH2NIDFHbEFK5FT2WOix4fVS0_4GttCr706C57zmShMy5Fu3PQN53gtQ=w408-h544-k-no",
     description:
       "Masjid sederhana namun nyaman dengan arsitektur tradisional. Terkenal dengan jamaah yang solid dan program tahfidz untuk anak-anak.",
     friday_khutbah_time: "12:30",
@@ -764,8 +824,9 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
     prayer_mats_provided: false,
     separate_wudhu_areas: true,
     open_24_hours: false,
+    google_maps_link: "https://maps.app.goo.gl/aoa1Jgo64mMNW6f2A",
     image_url:
-      "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      "https://lh3.googleusercontent.com/gps-cs-s/AC9h4noyBVdh5BndssTDAU6pvERylr6_PpySO-hxWn5i3A4CYWB80uE6BhPTkScKamPCVA3ePpLRe8smy8jq1LmibDClN8H2tGnGt2SvPMrwqLJYnUJawTWSFh4-nSKu-DKkLcUan2WyOw=w408-h544-k-no",
     description:
       "Masjid sederhana namun nyaman dengan arsitektur tradisional. Terkenal dengan jamaah yang solid dan program tahfidz untuk anak-anak.",
     friday_khutbah_time: "12:30",
@@ -774,7 +835,8 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
   {
     id: 34,
     name: "Masjid Raya KH. Hasyim Asy'ari Jakarta",
-    address: "Jalan Daan Mogot KM 14,5 No.14, RT.3/RW.14, Duri Kosambi, Kecamatan Cengkareng, Kota Jakarta Barat",
+    address:
+      "Jalan Daan Mogot KM 14,5 No.14, RT.3/RW.14, Duri Kosambi, Kecamatan Cengkareng, Kota Jakarta Barat",
     latitude: -6.1590954,
     longitude: 106.7044059,
     distance: 1.8,
@@ -787,8 +849,9 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
     prayer_mats_provided: false,
     separate_wudhu_areas: true,
     open_24_hours: false,
+    google_maps_link: "https://maps.app.goo.gl/4J5PjoboMcFdXiFJ8",
     image_url:
-      "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      "https://lh3.googleusercontent.com/p/AF1QipNdN8K6AwROs_xsKjj2gWIMfAOcD_seSnYtxC50=w244-h244-k-no",
     description:
       "Masjid sederhana namun nyaman dengan arsitektur tradisional. Terkenal dengan jamaah yang solid dan program tahfidz untuk anak-anak.",
     friday_khutbah_time: "12:30",
@@ -797,7 +860,8 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
   {
     id: 35,
     name: "Masjid Jami Hidayatul Al-Anwar",
-    address: "Jl. Karya Usaha No.50, RT.3/RW.3, Srengseng, Kec. Kembangan, Kota Jakarta Barat",
+    address:
+      "Jl. Karya Usaha No.50, RT.3/RW.3, Srengseng, Kec. Kembangan, Kota Jakarta Barat",
     latitude: -6.2139516,
     longitude: 106.7476759,
     distance: 1.8,
@@ -810,8 +874,9 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
     prayer_mats_provided: false,
     separate_wudhu_areas: true,
     open_24_hours: false,
+    google_maps_link: "https://maps.app.goo.gl/AqAeTr937S449PBL8",
     image_url:
-      "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nqy5Ba505YrHGsHd5EVhd2_YrUf228k4nFDgzROUUnU8Ji7_63m9GMYyTiaLX3dXzcvgQl2yV09xmwNNlqrN95fLZ-3iWG2nR-ciHiXuSX7zt3Dwt62IMmtNlrBe8HOHLd-96VU=w408-h544-k-no",
     description:
       "Masjid sederhana namun nyaman dengan arsitektur tradisional. Terkenal dengan jamaah yang solid dan program tahfidz untuk anak-anak.",
     friday_khutbah_time: "12:30",
@@ -833,8 +898,9 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
     prayer_mats_provided: false,
     separate_wudhu_areas: true,
     open_24_hours: false,
+    google_maps_link: "https://maps.app.goo.gl/75vwz4YzaT9T2yyq9",
     image_url:
-      "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      "https://lh3.googleusercontent.com/gps-cs-s/AC9h4npbkO4ZeGcjHkOcAPYF56G-9tSkHQhOfVl3YxWCdsMj30hs0UKDsMHMXPYZKb_GaStlz2eRaJh1mnLG2secxqrBb0_PEDBbnziHtBfpA9wwh5USE5iQgf7TxFafnQ1wr8uirvRT0g=w408-h544-k-no",
     description:
       "Masjid sederhana namun nyaman dengan arsitektur tradisional. Terkenal dengan jamaah yang solid dan program tahfidz untuk anak-anak.",
     friday_khutbah_time: "12:30",
@@ -843,7 +909,8 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
   {
     id: 37,
     name: "Masjid Al Makmur",
-    address: "Jl. Kepu Dalam II No.02 2, RT.6/RW.2, Kemayoran, Kec. Kemayoran, Kota Jakarta Pusat",
+    address:
+      "Jl. Kepu Dalam II No.02 2, RT.6/RW.2, Kemayoran, Kec. Kemayoran, Kota Jakarta Pusat",
     latitude: -6.1637442,
     longitude: 106.8305493,
     distance: 1.8,
@@ -856,8 +923,9 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
     prayer_mats_provided: false,
     separate_wudhu_areas: true,
     open_24_hours: false,
+    google_maps_link: "https://maps.app.goo.gl/G6pE7SkkGaVrqjBeA",
     image_url:
-      "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nroc6-7o8qS5nNjdYI75XIrWoiUzYGZ83MdeOxpzp7F8J4kbcnSBwXI4FjoNkxDUCKaymqaNDVH7z1dVsV1kpTjZQ3fzMUvxsIMibadgY4zGlhp1VR-pXbx-kX5ONQAXw2icL2L=w408-h544-k-no",
     description:
       "Masjid sederhana namun nyaman dengan arsitektur tradisional. Terkenal dengan jamaah yang solid dan program tahfidz untuk anak-anak.",
     friday_khutbah_time: "12:30",
@@ -866,7 +934,8 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
   {
     id: 38,
     name: "Masjid Lautze",
-    address: "Jl. Lautze No.87 10, RT.10/RW.3, Karang Anyar, Kecamatan Sawah Besar, Kota Jakarta Pusat",
+    address:
+      "Jl. Lautze No.87 10, RT.10/RW.3, Karang Anyar, Kecamatan Sawah Besar, Kota Jakarta Pusat",
     latitude: -6.1585193,
     longitude: 106.8175001,
     distance: 1.8,
@@ -879,8 +948,9 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
     prayer_mats_provided: false,
     separate_wudhu_areas: true,
     open_24_hours: false,
+    google_maps_link: "https://maps.app.goo.gl/RNQnYeb8Z9HuduuC8",
     image_url:
-      "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      "https://lh3.googleusercontent.com/gps-cs-s/AC9h4noQYjXaDnQoCgDCjj9QILfoaq8jgmA6R_NuvpU7Dkc0i1RrOcAjiVJKA8QYmcj9BBJJaY1NT9c9ej4V_m-2STyQ90LG235rlwZvhg89T4b4w0t3VFVxyqqtBV0MA8wsE6-ZMLVzzw=w408-h544-k-no",
     description:
       "Masjid sederhana namun nyaman dengan arsitektur tradisional. Terkenal dengan jamaah yang solid dan program tahfidz untuk anak-anak.",
     friday_khutbah_time: "12:30",
@@ -889,7 +959,8 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
   {
     id: 39,
     name: "Masjid Jami' Adillia At-Taqwa",
-    address: "Jl. Margaguna Raya No.3 2, RT.2/RW.1, Gandaria Sel., Kec. Cilandak, Kota Jakarta Selatan",
+    address:
+      "Jl. Margaguna Raya No.3 2, RT.2/RW.1, Gandaria Sel., Kec. Cilandak, Kota Jakarta Selatan",
     latitude: -6.2633015,
     longitude: 106.7737518,
     distance: 1.8,
@@ -902,8 +973,9 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
     prayer_mats_provided: false,
     separate_wudhu_areas: true,
     open_24_hours: false,
+    google_maps_link: "https://maps.app.goo.gl/Hc5JdUGSMGwXZtB4A",
     image_url:
-      "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nrGjBzcXwzpD86n5Z2rdWvRz3LZrSgfUwu6sMj-u3QiORi-ba7YENPLpNtrkdY3z4e5oAj9SDX2IWKiJB8A35s-jTuSaE5WdkIiMvVILTzIyBl5Diaz6Xp2JKrkB9IQEn4pL9z57w=w408-h544-k-no",
     description:
       "Masjid sederhana namun nyaman dengan arsitektur tradisional. Terkenal dengan jamaah yang solid dan program tahfidz untuk anak-anak.",
     friday_khutbah_time: "12:30",
@@ -912,7 +984,8 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
   {
     id: 40,
     name: "Jakarta Islamic Centre",
-    address: "Jl. Kramat Jaya Raya No.1, RT.6/RW.1, Tugu Utara, Kec. Koja, Jkt Utara",
+    address:
+      "Jl. Kramat Jaya Raya No.1, RT.6/RW.1, Tugu Utara, Kec. Koja, Jkt Utara",
     latitude: -6.1218672,
     longitude: 106.9034456,
     distance: 1.8,
@@ -925,8 +998,9 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
     prayer_mats_provided: false,
     separate_wudhu_areas: true,
     open_24_hours: false,
+    google_maps_link: "https://maps.a,pp.goo.gl/YaAJLzTaowPJ8cqf8",
     image_url:
-      "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      "https://lh3.googleusercontent.com/gps-cs-s/AC9h4npz2ZeDApznir2q8wCLNw4Q6DBhWv4ntEvhkpFyeDsteu3kTQ8xLHrWdCSnb_JfA2ky0D5LAAnQTPNtFhOEOFat-IHbhibVdNEsLNodkSLbuXaMWYil71zy2HsqKehZfwOyrn5L=w408-h544-k-no",
     description:
       "Masjid sederhana namun nyaman dengan arsitektur tradisional. Terkenal dengan jamaah yang solid dan program tahfidz untuk anak-anak.",
     friday_khutbah_time: "12:30",
@@ -935,7 +1009,8 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
   {
     id: 41,
     name: "MASJID AL ALAM MARUNDA",
-    address: "Jl. Marunda RT.09 / RW.01, Marunda, Cilincing, RT.3/RW.7, Marunda, Kec. Cilincing, Jkt Utara",
+    address:
+      "Jl. Marunda RT.09 / RW.01, Marunda, Cilincing, RT.3/RW.7, Marunda, Kec. Cilincing, Jkt Utara",
     latitude: -6.0938441,
     longitude: 106.9560982,
     distance: 1.8,
@@ -948,8 +1023,9 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
     prayer_mats_provided: false,
     separate_wudhu_areas: true,
     open_24_hours: false,
+    google_maps_link: "https://maps.app.goo.gl/2qTRrC6DpAa9e3RR7",
     image_url:
-      "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nqgc1LpPmB091da_69JoHJ4P2xMsJwhvrBzIP8IA2t26Hsi4L6Zgr6dKpBBvxBCsLupBCP_ZKcvmHUtqFUvybZheOnYRvQ_8-f-9F9RMkyyLHhazg176mqDB9xJKl5UwdOSqnyt=w408-h544-k-no",
     description:
       "Masjid sederhana namun nyaman dengan arsitektur tradisional. Terkenal dengan jamaah yang solid dan program tahfidz untuk anak-anak.",
     friday_khutbah_time: "12:30",
@@ -958,7 +1034,8 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
   {
     id: 42,
     name: "Masjid Ar Ridho - Bank Bukopin",
-    address: "Jl. Letjen M.T. Haryono No.kav. 50-51 3, RT.3/RW.4, Cikoko, Kec. Pancoran, Kota Jakarta Selatan",
+    address:
+      "Jl. Letjen M.T. Haryono No.kav. 50-51 3, RT.3/RW.4, Cikoko, Kec. Pancoran, Kota Jakarta Selatan",
     latitude: -6.2439996,
     longitude: 106.8445277,
     distance: 1.8,
@@ -971,8 +1048,9 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
     prayer_mats_provided: false,
     separate_wudhu_areas: true,
     open_24_hours: false,
+    google_maps_link: "https://maps.app.goo.gl/wBYaNhZtNQFqnKZ18",
     image_url:
-      "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      "https://lh3.googleusercontent.com/gps-cs-s/AC9h4noKONpnUD7QsMVNSvmaHjpCezEzLDi5ScZAIjTykDDkHKSfGhjGpWaCHbuFFcArhkjO5joP4oFLvOsBl2mCu7JbZW9a48NdW6-cjjJ-iQMgFeR79cnKGRVaMTnqcH9Uzn_tWFE=w408-h544-k-no",
     description:
       "Masjid sederhana namun nyaman dengan arsitektur tradisional. Terkenal dengan jamaah yang solid dan program tahfidz untuk anak-anak.",
     friday_khutbah_time: "12:30",
@@ -981,7 +1059,8 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
   {
     id: 43,
     name: "Masjid Jami' Nurul Huda",
-    address: "Jl. H. Abdul Majid Dalam III Komp. Deplu No.50, RT.8/RW.5, Cipete Sel., Kec. Cilandak, Kota Jakarta Selatan",
+    address:
+      "Jl. H. Abdul Majid Dalam III Komp. Deplu No.50, RT.8/RW.5, Cipete Sel., Kec. Cilandak, Kota Jakarta Selatan",
     latitude: -6.2685247,
     longitude: 106.7912749,
     distance: 1.8,
@@ -994,8 +1073,9 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
     prayer_mats_provided: false,
     separate_wudhu_areas: true,
     open_24_hours: false,
+    google_maps_link: "https://maps.app.goo.gl/e3X8GE8vMxbGEVdf7",
     image_url:
-      "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      "https://lh3.googleusercontent.com/p/AF1QipPhuqo5SvvBT4cNDXdDdR-FhTnJyR_JOXwlwNQf=w408-h544-k-no",
     description:
       "Masjid sederhana namun nyaman dengan arsitektur tradisional. Terkenal dengan jamaah yang solid dan program tahfidz untuk anak-anak.",
     friday_khutbah_time: "12:30",
@@ -1004,7 +1084,8 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
   {
     id: 44,
     name: "Masjid Nuurul Falaah",
-    address: "Jl. Sespakes No.50 9, RT.1/RW.5, Sunter Jaya, Kec. Tj. Priok, Jkt Utara",
+    address:
+      "Jl. Sespakes No.50 9, RT.1/RW.5, Sunter Jaya, Kec. Tj. Priok, Jkt Utara",
     latitude: -6.1506896,
     longitude: 106.8594893,
     distance: 1.8,
@@ -1017,8 +1098,9 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
     prayer_mats_provided: false,
     separate_wudhu_areas: true,
     open_24_hours: false,
+    google_maps_link: "https://maps.app.goo.gl/eVTTq6MZwLvc2Mxm7",
     image_url:
-      "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      "https://lh3.googleusercontent.com/gps-cs-s/AC9h4noGGnp-zlZWTQGX6YjEnkyU7qtleLJr3ldMKpv4luJQEbeSeA77c2-UsKfiqYvZqa5eXbZjJ39LjsxFO1EY6KQRAafkdqUlzzYFihh1nmxyyx0wk0aTsfY-WL0jpCIoQf-yAhu24A=w408-h544-k-no",
     description:
       "Masjid sederhana namun nyaman dengan arsitektur tradisional. Terkenal dengan jamaah yang solid dan program tahfidz untuk anak-anak.",
     friday_khutbah_time: "12:30",
@@ -1027,7 +1109,8 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
   {
     id: 45,
     name: "Masjid Assyafi'iyyah",
-    address: "Utara I Jl. Pos No.5, RT.4/RW.1, Ps. Baru, Kecamatan Sawah Besar, Kota Jakarta Pusat",
+    address:
+      "Utara I Jl. Pos No.5, RT.4/RW.1, Ps. Baru, Kecamatan Sawah Besar, Kota Jakarta Pusat",
     latitude: -6.1660119,
     longitude: 106.8235203,
     distance: 1.8,
@@ -1040,8 +1123,9 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
     prayer_mats_provided: false,
     separate_wudhu_areas: true,
     open_24_hours: false,
+    google_maps_link: "https://maps.app.goo.gl/YDyjeQbSGexdK7FdA",
     image_url:
-      "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nrF4v9l4sSJ7H3JjVOYa3cZ7hkXDVzofTgu1Wam11X6bi8SYTzvTbQZxK9flVT17yBr9b9GC06XibjFiRmVKOIPPlXQWcH2GTskbtnlyf7EQOBAIe0N5Zbno9IaI8YFnzXN_XmwVQ=w408-h544-k-no",
     description:
       "Masjid sederhana namun nyaman dengan arsitektur tradisional. Terkenal dengan jamaah yang solid dan program tahfidz untuk anak-anak.",
     friday_khutbah_time: "12:30",
@@ -1050,7 +1134,8 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
   {
     id: 46,
     name: "MASJID NURUL RAHMAN",
-    address: "Jl. Bangka III-A No.50, RT.10/RW.3, Pela Mampang, Kec. Mampang Prpt., Kota Jakarta Selatan",
+    address:
+      "Jl. Bangka III-A No.50, RT.10/RW.3, Pela Mampang, Kec. Mampang Prpt., Kota Jakarta Selatan",
     latitude: -6.2473365,
     longitude: 106.8101469,
     distance: 1.8,
@@ -1063,8 +1148,9 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
     prayer_mats_provided: false,
     separate_wudhu_areas: true,
     open_24_hours: false,
+    google_maps_link: "https://maps.app.goo.gl/wKw5Dg1hDE9nBirD7",
     image_url:
-      "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      "https://lh3.googleusercontent.com/gps-cs-s/AC9h4np-V0DWGLmph4jf93jaDPafnDFw6_At-qnqv8htFCy4XPlgN4ii1gJ5PtG4kOm9nzVBuwj-q6QfsXpXIHwg59AlM2SkNYajHe_cAlJxeQ_m5A3lTZGx-Bhd7yi5wdS3lZNzSTg=w408-h544-k-no",
     description:
       "Masjid sederhana namun nyaman dengan arsitektur tradisional. Terkenal dengan jamaah yang solid dan program tahfidz untuk anak-anak.",
     friday_khutbah_time: "12:30",
@@ -1073,7 +1159,8 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
   {
     id: 47,
     name: "Masjid Jami' Nurul Iman",
-    address: "Jl. Cipinang Baru Bunder No.37 1, RT.1/RW.1, Cipinang, Kec. Pulo Gadung, Kota Jakarta Timur",
+    address:
+      "Jl. Cipinang Baru Bunder No.37 1, RT.1/RW.1, Cipinang, Kec. Pulo Gadung, Kota Jakarta Timur",
     latitude: -6.2063012,
     longitude: 106.8826645,
     distance: 1.8,
@@ -1086,8 +1173,9 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
     prayer_mats_provided: false,
     separate_wudhu_areas: true,
     open_24_hours: false,
+    google_maps_link: "https://maps.app.goo.gl/f3WGp5yXxKCUnWc4A",
     image_url:
-      "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nom9tkrzjc2zSVSS_98mruwLLt8PCiWrB4oE1vr2p6m6YKGSQMKWVaD6zOpcy-E1xxeoUlBiP0GeOKmaBBzn76tywwAKAxFI7RH8m2K4UohYiz6pJBI159otiRV34p3aDDgObXGuw=w408-h544-k-no",
     description:
       "Masjid sederhana namun nyaman dengan arsitektur tradisional. Terkenal dengan jamaah yang solid dan program tahfidz untuk anak-anak.",
     friday_khutbah_time: "12:30",
@@ -1096,7 +1184,8 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
   {
     id: 48,
     name: "MASJID ARRAUDHOH",
-    address: "Jl. Kota Bambu Utara IV No.50, RT.6/RW.6, Kota Bambu Utara, Kec. Palmerah",
+    address:
+      "Jl. Kota Bambu Utara IV No.50, RT.6/RW.6, Kota Bambu Utara, Kec. Palmerah",
     latitude: -6.1821503,
     longitude: 106.7964888,
     distance: 1.8,
@@ -1109,8 +1198,9 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
     prayer_mats_provided: false,
     separate_wudhu_areas: true,
     open_24_hours: false,
+    google_maps_link: "https://maps.app.goo.gl/ffpEruUT3GBPAXxR7",
     image_url:
-      "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      "https://lh3.googleusercontent.com/p/AF1QipNmCVLDZ_-smVS2YzHFqAwV2WKj-iewLYGGYQlz=w408-h544-k-no",
     description:
       "Masjid sederhana namun nyaman dengan arsitektur tradisional. Terkenal dengan jamaah yang solid dan program tahfidz untuk anak-anak.",
     friday_khutbah_time: "12:30",
@@ -1119,7 +1209,8 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
   {
     id: 49,
     name: "Masjid An Nur",
-    address: "Komplek Perumahan Departemen Perdagangan, Jalan Puskesmas No. 50, Kelapa Gading Timur, Kelapa Gading, RT.4/RW.6, Klp. Gading Tim., Jakarta Utara",
+    address:
+      "Komplek Perumahan Departemen Perdagangan, Jalan Puskesmas No. 50, Kelapa Gading Timur, Kelapa Gading, RT.4/RW.6, Klp. Gading Tim., Jakarta Utara",
     latitude: -6.1781999,
     longitude: 106.8971653,
     distance: 1.8,
@@ -1132,8 +1223,9 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
     prayer_mats_provided: false,
     separate_wudhu_areas: true,
     open_24_hours: false,
+    google_maps_link: "https://maps.app.goo.gl/fjMJ2MDpwANwAd2R7",
     image_url:
-      "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nr9tdkdB0YaumN26xFvOj352qu-mT-P1T9G-bCN8LiehJU_BAtYW0KzXPykOk91KmQcWJFwU6QJJQirkrKtnSi3Ant2qJqddCqOO7YQoECV2oNkmYwo--3PU8nnjG44XUpc-33O=w408-h544-k-no",
     description:
       "Masjid sederhana namun nyaman dengan arsitektur tradisional. Terkenal dengan jamaah yang solid dan program tahfidz untuk anak-anak.",
     friday_khutbah_time: "12:30",
@@ -1142,7 +1234,8 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
   {
     id: 50,
     name: "Masjid Jami Al Hidayah",
-    address: "Jl. Tebet Dalam III, RT.6/RW.1, Tebet Bar., Kec. Tebet, Kota Jakarta Selatan",
+    address:
+      "Jl. Tebet Dalam III, RT.6/RW.1, Tebet Bar., Kec. Tebet, Kota Jakarta Selatan",
     latitude: -6.2267023,
     longitude: 106.8402193,
     distance: 1.8,
@@ -1155,8 +1248,9 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
     prayer_mats_provided: false,
     separate_wudhu_areas: true,
     open_24_hours: false,
+    google_maps_link: "https://maps.app.goo.gl/juM7Nwdd7W8dpCJx7",
     image_url:
-      "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nrfoXYkXaSM20jZPkCLjxtDuXfWWfhUuFgXKaCYeXEHFi6tXDq3b8dt3d1m-L4E2TVbKygo5bpSJeq1PKtRJgOEJbZ1ljnw3D4ALWJOsjHeHbUt4sZgW7mOYwFRKCGS7-NtR8qw=w408-h544-k-no",
     description:
       "Masjid sederhana namun nyaman dengan arsitektur tradisional. Terkenal dengan jamaah yang solid dan program tahfidz untuk anak-anak.",
     friday_khutbah_time: "12:30",
@@ -1178,8 +1272,9 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
     prayer_mats_provided: false,
     separate_wudhu_areas: true,
     open_24_hours: false,
+    google_maps_link: "https://maps.app.goo.gl/ePkXc59Dpi3MCjpk6",
     image_url:
-      "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nqxAaXVJHxApcgR8yBlilX1mMgxvQBQYjLF3lChDQZam_xR7bNJuenR0G_xCfd9lqbW6WSgyYGYRauTqeYMN3QMpx3AR5Pj2YvuwGGH4Idgxevjca_wRvz1NRnMZR7V2z6tLZ-YFg=w408-h544-k-no",
     description:
       "Masjid sederhana namun nyaman dengan arsitektur tradisional. Terkenal dengan jamaah yang solid dan program tahfidz untuk anak-anak.",
     friday_khutbah_time: "12:30",
@@ -1201,8 +1296,9 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
     prayer_mats_provided: false,
     separate_wudhu_areas: true,
     open_24_hours: false,
+    google_maps_link: "https://maps.app.goo.gl/sZLsXntFMynaQF9c9",
     image_url:
-      "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nrG1HHV3Is9HSl9Wl-ICNMQVT_K9OJWvq8WaLaV8CpUqptLuJc1uUuKuWXVY4ZArjNLU-ufVKfKud1AcpY-IM2TGtyIYzhMe9ctpuNB6Iq2FrDQKgBJY9f96xFPmSAVRCEyWfyt6g=w408-h544-k-no",
     description:
       "Masjid sederhana namun nyaman dengan arsitektur tradisional. Terkenal dengan jamaah yang solid dan program tahfidz untuk anak-anak.",
     friday_khutbah_time: "12:30",
@@ -1224,8 +1320,9 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
     prayer_mats_provided: false,
     separate_wudhu_areas: true,
     open_24_hours: false,
+    google_maps_link:"https://maps.app.goo.gl/gFPUo8foySCWzBnc9",
     image_url:
-      "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      "https://lh3.googleusercontent.com/gps-cs-s/AC9h4npLwFeUmknFgcn8RacK8W1wwii-0giJapF7N_WO6Suvvu9wNhOB7VyoNhltn5vPjI9Z-hPsYxtu3cq5errXSqMZGK0g-3MD4uSTCFFvQacfAp8jvRfRtkZEbAYSpR4-kZcE6LeM=w408-h544-k-no",
     description:
       "Masjid sederhana namun nyaman dengan arsitektur tradisional. Terkenal dengan jamaah yang solid dan program tahfidz untuk anak-anak.",
     friday_khutbah_time: "12:30",
@@ -1234,7 +1331,8 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
   {
     id: 54,
     name: "Masjid Ad da'wah Centre Muhammadiyah",
-    address: "Air Hitam, Kec. Samarinda Ulu, Kota Samarinda, Kalimantan Timur 75243",
+    address:
+      "Air Hitam, Kec. Samarinda Ulu, Kota Samarinda, Kalimantan Timur 75243",
     latitude: -0.490961,
     longitude: 117.1325435,
     distance: 1.8,
@@ -1247,8 +1345,9 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
     prayer_mats_provided: false,
     separate_wudhu_areas: true,
     open_24_hours: false,
+    google_maps_link:"https://maps.app.goo.gl/3DbA9FRJsU4KRube8",
     image_url:
-      "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nqGGA0pZ4MnelSruhYwBQohQGqlNsQL8n6VcULSO19QufLpCq9M-7d9YpXtgjp51oxdWYqerognRoxEdA3uzKEGG2kcA2RINHy2tfyzWbLcwwzBmQPeTiMH6p37qv3bx5uoJv211g=w408-h544-k-no",
     description:
       "Masjid sederhana namun nyaman dengan arsitektur tradisional. Terkenal dengan jamaah yang solid dan program tahfidz untuk anak-anak.",
     friday_khutbah_time: "12:30",
@@ -1270,8 +1369,9 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
     prayer_mats_provided: false,
     separate_wudhu_areas: true,
     open_24_hours: false,
+    google_maps_link:"https://maps.app.goo.gl/tz3s3wVz7EeNXoGWA",
     image_url:
-      "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nqtx-HCpXOSmEYveV2KGdHtePa-nk8a88Q5mbHlD99_ek6LkZN7wDq_1F34EGc8nQgMH1GvdODmHiC7xc_FgOfJoF3koypZ_4QCCtNbwVCpuloXZpQnQUDuV3-cnpphkv1eZKyJNqVKPzkN=w260-h144-k-no",
     description:
       "Masjid sederhana namun nyaman dengan arsitektur tradisional. Terkenal dengan jamaah yang solid dan program tahfidz untuk anak-anak.",
     friday_khutbah_time: "12:30",
@@ -1293,8 +1393,9 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
     prayer_mats_provided: false,
     separate_wudhu_areas: true,
     open_24_hours: false,
+    google_maps_link:"https://maps.app.goo.gl/9WAj5UuU9cgtDtzbA",
     image_url:
-      "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nrZR3egp4ROtZDaCw0KP_rlud7lEFFGIlnRS0BXK_mmzOMTqS-1YwEbfbvtld8yo0qHsA1taPAzf_PDFANg491-CFalfFwu8PAOMiyGBuqh-beRz1mEHHkI7ehqmN2SkGLseGFx=w408-h544-k-no",
     description:
       "Masjid sederhana namun nyaman dengan arsitektur tradisional. Terkenal dengan jamaah yang solid dan program tahfidz untuk anak-anak.",
     friday_khutbah_time: "12:30",
@@ -1316,8 +1417,9 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
     prayer_mats_provided: false,
     separate_wudhu_areas: true,
     open_24_hours: false,
+    google_maps_link:"https://maps.app.goo.gl/kzAy9g4AoUwwFhcQ6",
     image_url:
-      "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      "https://lh3.googleusercontent.com/gps-cs-s/AC9h4npypfmb8wbOruIermvFY-vv565rFozuiqkXYxFDnZ0kv8TACTs1j5Vz0NzXsmD5a_TrKX3I75pZxbeZz3FB-XqL7qBs70b2SrmnBbCnBPRrI9bhOvpnQwoo2cChzZnV_amMLq8e=w408-h544-k-no",
     description:
       "Masjid sederhana namun nyaman dengan arsitektur tradisional. Terkenal dengan jamaah yang solid dan program tahfidz untuk anak-anak.",
     friday_khutbah_time: "12:30",
@@ -1339,8 +1441,9 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
     prayer_mats_provided: false,
     separate_wudhu_areas: true,
     open_24_hours: false,
+    google_maps_link:"https://maps.app.goo.gl/BozQDUw8WvK4ndDU7",
     image_url:
-      "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      "https://lh3.googleusercontent.com/gps-cs-s/AC9h4npI7uWv4BzpCzrddY-UUISdrW_kuFq3t7tZqz1SqEjZwnkq4yOxa6Z6beDjwYXDzh8Xj6mP_SFoZGwwlGDqH6MDBKUeIdKlgbVfFhflCkndjIsAv0K7CtLG6wa7nxOuhCeasc_o=w408-h544-k-no",
     description:
       "Masjid sederhana namun nyaman dengan arsitektur tradisional. Terkenal dengan jamaah yang solid dan program tahfidz untuk anak-anak.",
     friday_khutbah_time: "12:30",
@@ -1362,8 +1465,9 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
     prayer_mats_provided: false,
     separate_wudhu_areas: true,
     open_24_hours: false,
+    google_maps_link:"https://maps.app.goo.gl/PHsrAgGZKZDv4FLj9",
     image_url:
-      "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nprPVt28JUGUmkEVzvMiytXT38BRzbuTmDxroAvsvAzGS2MJWBMc_H6BPfb0XRG-aBXjl17NAWdVZZmXP4uPGhn1EHzed16LV5K9EbwpDoXAKyi5cuUIrPy-dgms5hUVD9z7XuM=w408-h544-k-no",
     description:
       "Masjid sederhana namun nyaman dengan arsitektur tradisional. Terkenal dengan jamaah yang solid dan program tahfidz untuk anak-anak.",
     friday_khutbah_time: "12:30",
@@ -1385,8 +1489,9 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
     prayer_mats_provided: false,
     separate_wudhu_areas: true,
     open_24_hours: false,
+    google_maps_link:"https://maps.app.goo.gl/qS5vFEvtEk1Rupzw8",
     image_url:
-      "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nr4Gk1o39AVia34pUlkaSi0exKz7qzeA5cfVUx5kmD8HjAmkceM7vhkarKfbL1vEM9rlG31mk15AbVGJzvWQDJNLd1Xr06tEBUxEI3hJCPa6ifT_14jY9SNZT33NvqliirkdZGndQ=w408-h544-k-no",
     description:
       "Masjid sederhana namun nyaman dengan arsitektur tradisional. Terkenal dengan jamaah yang solid dan program tahfidz untuk anak-anak.",
     friday_khutbah_time: "12:30",
@@ -1408,8 +1513,9 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
     prayer_mats_provided: false,
     separate_wudhu_areas: true,
     open_24_hours: false,
+    google_maps_link:"https://maps.app.goo.gl/z4Zxf3HbvY8jfNk47",
     image_url:
-      "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nquAbaR97YEPFnCs3BnTmhGs7tKnudp-qFCsHmQzrXQToUoiI6vS98iK27we5MJvDx6cd2_TAj8JqqfUkPA3hdwBbqYMnjx9tVTT7C2bBWZ6cQD12j6tcLLYctzzD6G0xqOZR0=w408-h544-k-no",
     description:
       "Masjid sederhana namun nyaman dengan arsitektur tradisional. Terkenal dengan jamaah yang solid dan program tahfidz untuk anak-anak.",
     friday_khutbah_time: "12:30",
@@ -1431,8 +1537,9 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
     prayer_mats_provided: false,
     separate_wudhu_areas: true,
     open_24_hours: false,
+    google_maps_link:"https://maps.app.goo.gl/16tL4s7cc6BmMtdk9",
     image_url:
-      "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      "https://lh3.googleusercontent.com/gps-cs-s/AC9h4no7KAPGBacRNxiNhj3nyoQZstgv6xOp20t5TnZoOz758mkNy25f7oAWtLX9puo8dds1SD9I95k2KOiaIrHx7vNTuVKT_IvepUhWu-YHuH-k4tC1iiwTrRWVuhVZfBEJfqIMDovZ=w408-h544-k-no",
     description:
       "Masjid sederhana namun nyaman dengan arsitektur tradisional. Terkenal dengan jamaah yang solid dan program tahfidz untuk anak-anak.",
     friday_khutbah_time: "12:30",
@@ -1454,8 +1561,9 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
     prayer_mats_provided: false,
     separate_wudhu_areas: true,
     open_24_hours: false,
+    google_maps_link:"https://maps.app.goo.gl/jhEpyxHSjeyFxuhQA",
     image_url:
-      "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      "https://lh3.googleusercontent.com/gps-cs-s/AC9h4npv4ksx912Su7KC3EkNv7zp8aRWzoaF6auItbAhSmf_323aidMPEeT5SD990ltdodMJyhqbgeTKJwbHvJyb4PhJRoOiprtxFB-nMX8yBfAF6kYfeF8lZqrpsZi1vSyKYeT2bpZM-Bs-I96b=w408-h544-k-no",
     description:
       "Masjid sederhana namun nyaman dengan arsitektur tradisional. Terkenal dengan jamaah yang solid dan program tahfidz untuk anak-anak.",
     friday_khutbah_time: "12:30",
@@ -1463,7 +1571,7 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
   },
   {
     id: 64,
-    name: "Masjid Asy‑Syifa",
+    name: "Masjid Asy-Syifa",
     address: "Jl. Kakap, Sungai Dama, Kec. Samarinda Ilir",
     latitude: -0.5058429,
     longitude: 117.158295,
@@ -1477,8 +1585,9 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
     prayer_mats_provided: false,
     separate_wudhu_areas: true,
     open_24_hours: false,
+    google_maps_link:"https://maps.app.goo.gl/kpW3hGiJafkoAnxHA",
     image_url:
-      "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      "https://lh3.googleusercontent.com/gps-proxy/ALd4DhG8mayOSdGzAhr_m5Cmr6PKcKVYS9i5INGxcIE4xaDGtK2gpYXmfgO0tpkakKiTApjsUPOlPQlmIbU4zDTR38cHxf1FmO85YPbVhs88ZiBkyDrRVYt3Dy9aBOMiWPFFfuOA6n83xcCLrlccce_kXimytXmjUlKUfpOR9G9NPDRdiJ6ifXSXy1p4eERdSonqobwt_2M=w408-h544-k-no",
     description:
       "Masjid sederhana namun nyaman dengan arsitektur tradisional. Terkenal dengan jamaah yang solid dan program tahfidz untuk anak-anak.",
     friday_khutbah_time: "12:30",
@@ -1500,8 +1609,9 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
     prayer_mats_provided: false,
     separate_wudhu_areas: true,
     open_24_hours: false,
+    google_maps_link:"https://maps.app.goo.gl/Mzk1nW8k9MY6TrUUA",
     image_url:
-      "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      "https://lh3.googleusercontent.com/gps-cs-s/AC9h4npHq9jyX1xBs198r72TJW3KD1k0qO0-6tDMu7Hnif7Gev9M2TAYMXcBaSm_nqwwrguJWORWlIoHBO90MJRAM7Vs-ZOogoLSwFNSQu_IjQi6HY7RCFRlvrNyEhlEB-xa04Cbxi9v=w408-h544-k-no",
     description:
       "Masjid sederhana namun nyaman dengan arsitektur tradisional. Terkenal dengan jamaah yang solid dan program tahfidz untuk anak-anak.",
     friday_khutbah_time: "12:30",
@@ -1523,8 +1633,9 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
     prayer_mats_provided: false,
     separate_wudhu_areas: true,
     open_24_hours: false,
+    google_maps_link:"https://maps.app.goo.gl/ARo5ij11vcK9QkNVA",
     image_url:
-      "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      "https://lh3.googleusercontent.com/gps-proxy/ALd4DhFbjfN6EEcJbd-YBqzeAfaL6jA8p9k5KniEjGrAPgMdtLscLHlFBjFC6C3dTh07qLNJS678vA0q4_asdp7ib2jZnGYymiLOYsEy5hZbCqrQdpCzpU6Y_ZmR7od6R7QcjI9kRgAqMH74C2mhLZphLUXekef6l939D-fjzefqN3iCt7_Wh87H_ULdrv29BvRDwS05UKg=w408-h544-k-no",
     description:
       "Masjid sederhana namun nyaman dengan arsitektur tradisional. Terkenal dengan jamaah yang solid dan program tahfidz untuk anak-anak.",
     friday_khutbah_time: "12:30",
@@ -1546,8 +1657,9 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
     prayer_mats_provided: false,
     separate_wudhu_areas: true,
     open_24_hours: false,
+    google_maps_link:"https://maps.app.goo.gl/An5cxJZaYzmKNyTr5",
     image_url:
-      "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nqpQzlDGhLGzT835ghfiE1CCJ6XfjjFXqz5t3xq7UHumMTNm3TcNnA1XElJj5iJguJeQOH4iFPrVeAs0YC2o6oJYowWKtl5cn1mbW960A0tLJiu_tSjnz8yp2P7VUBVQv0QYy_L4w=w408-h544-k-no",
     description:
       "Masjid sederhana namun nyaman dengan arsitektur tradisional. Terkenal dengan jamaah yang solid dan program tahfidz untuk anak-anak.",
     friday_khutbah_time: "12:30",
@@ -1569,8 +1681,9 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
     prayer_mats_provided: false,
     separate_wudhu_areas: true,
     open_24_hours: false,
+    google_maps_link:"https://maps.app.goo.gl/5ztJkWP4eqLSkGWy9",
     image_url:
-      "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      "https://lh3.googleusercontent.com/gps-cs-s/AC9h4noPUduXzZwLf7lyYCusHolOgEW8Rl_Jl60T05j-XYz_tEXM02MJw1chZoaUXtGa0k6p5-GhpV08tSwobl0qjTcQ5u9_CiEnMlTdXDbKVHg3LSKMotKNRqBZF7mXgiGhkuO0Edt8IQ=w408-h544-k-no",
     description:
       "Masjid sederhana namun nyaman dengan arsitektur tradisional. Terkenal dengan jamaah yang solid dan program tahfidz untuk anak-anak.",
     friday_khutbah_time: "12:30",
@@ -1592,8 +1705,9 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
     prayer_mats_provided: false,
     separate_wudhu_areas: true,
     open_24_hours: false,
+    google_maps_link:"https://maps.app.goo.gl/GzZ3MRx48JGPxiVF8",
     image_url:
-      "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      "https://lh3.googleusercontent.com/p/AF1QipMvTlxuNk1grmYt4EJEV2LRIuXpmOdNWX9GXZG4=w408-h544-k-no",
     description:
       "Masjid sederhana namun nyaman dengan arsitektur tradisional. Terkenal dengan jamaah yang solid dan program tahfidz untuk anak-anak.",
     friday_khutbah_time: "12:30",
@@ -1615,8 +1729,9 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
     prayer_mats_provided: false,
     separate_wudhu_areas: true,
     open_24_hours: false,
+    google_maps_link:"https://maps.app.goo.gl/GWAuRkroGPtkHDkH7",
     image_url:
-      "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      "https://lh3.googleusercontent.com/gps-cs-s/AC9h4np5LdIHflafzjU_CxXqX4g8QOU79h-JFKo-jXbiAdnR_SUPNyGurEgEjY5qa_Oi5q2peyY1FcK_qNJAmwd93pJAlNFZ1Pbg3zM48B3DI4Aw2n1VQsZwfkIoSx9UWE5Vt67Nm8ZVdLMk0wP9=w408-h544-k-no",
     description:
       "Masjid sederhana namun nyaman dengan arsitektur tradisional. Terkenal dengan jamaah yang solid dan program tahfidz untuk anak-anak.",
     friday_khutbah_time: "12:30",
@@ -1638,8 +1753,9 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
     prayer_mats_provided: false,
     separate_wudhu_areas: true,
     open_24_hours: false,
+    google_maps_link:"https://maps.app.goo.gl/W4So7yoXUXKHjyKJA",
     image_url:
-      "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      "https://lh3.googleusercontent.com/gps-cs-s/AC9h4noXhJjPb6xKCwSehartNiCk_fg_HtZGWK7UJw1r11u1ny4iCp1luq0CS_ePhUe3mQJzyHtYBcH5vR7Q9DUt5oRM-vIZRX7Zmxh_wLf1g6C1XSMu7Dowo-QWk9DEX2xEwbAW8HU=w408-h544-k-no",
     description:
       "Masjid sederhana namun nyaman dengan arsitektur tradisional. Terkenal dengan jamaah yang solid dan program tahfidz untuk anak-anak.",
     friday_khutbah_time: "12:30",
@@ -1661,8 +1777,9 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
     prayer_mats_provided: false,
     separate_wudhu_areas: true,
     open_24_hours: false,
+    google_maps_link:"https://maps.app.goo.gl/JG4B46VwZzka8LEu9",
     image_url:
-      "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nqHdbcj0_I597OPjMs98j20Harl88I9NtEKF9-U9RG-lo8H4GrUgOA-4RvH5EbLllLSbla805bgV0Qd4kDDYMAe0j8btYEEaT1RAo_e9iDUwpfCKT9KcTAtyuMilpBVheLovXQJzw=w408-h544-k-no",
     description:
       "Masjid sederhana namun nyaman dengan arsitektur tradisional. Terkenal dengan jamaah yang solid dan program tahfidz untuk anak-anak.",
     friday_khutbah_time: "12:30",
@@ -1684,8 +1801,9 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
     prayer_mats_provided: false,
     separate_wudhu_areas: true,
     open_24_hours: false,
+    google_maps_link:"https://maps.app.goo.gl/y2g5PhJniHJRWVjWA",
     image_url:
-      "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      "https://lh3.googleusercontent.com/gps-cs-s/AC9h4noTAbxGljjGjYQf0n0wuhu3zuI6vRldXxuitgl427Rq4_MEBExxbXyFB22nqswVEAwY1xeEeOvb-H1ZI8zuR7joT1czdJ86ETwE8zlnQgzaXNMnhzjwgXMUh2nu3UAvjMnEdWMF=w408-h544-k-no",
     description:
       "Masjid sederhana namun nyaman dengan arsitektur tradisional. Terkenal dengan jamaah yang solid dan program tahfidz untuk anak-anak.",
     friday_khutbah_time: "12:30",
@@ -1707,8 +1825,9 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
     prayer_mats_provided: false,
     separate_wudhu_areas: true,
     open_24_hours: false,
+    google_maps_link:"https://maps.app.goo.gl/sXMBjH8RiuTV9htTA",
     image_url:
-      "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      "https://lh3.googleusercontent.com/gps-cs-s/AC9h4noWIVt0q2fZDmC20bQKO_l7JyA9k1vX97RNfMmarcfLsYzwLsyiLLl7rckYOMml7rGJZR7smpi0nikTU-_E7pDpHizEnnLiazXOixYUVn2arXf9vFzjl5gn65Yv-ihMKc5sWoumrA=w408-h544-k-no",
     description:
       "Masjid sederhana namun nyaman dengan arsitektur tradisional. Terkenal dengan jamaah yang solid dan program tahfidz untuk anak-anak.",
     friday_khutbah_time: "12:30",
@@ -1730,8 +1849,9 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
     prayer_mats_provided: false,
     separate_wudhu_areas: true,
     open_24_hours: false,
+    google_maps_link:"https://maps.app.goo.gl/f5GbJP37k5pCzgws5",
     image_url:
-      "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nr32pNYcjkngdokPXILqbqAbf0vXLxPm9ABLRwvx6bJnukampd9Sml_JV-nOuE9y0evdDKGXj9f2waGxZ10RW7Kp70UuXNJnrg7dlgmr83xhh9nEIKKkKh5uo8J86wr8PGFAbg=w408-h544-k-no",
     description:
       "Masjid sederhana namun nyaman dengan arsitektur tradisional. Terkenal dengan jamaah yang solid dan program tahfidz untuk anak-anak.",
     friday_khutbah_time: "12:30",
@@ -1753,8 +1873,9 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
     prayer_mats_provided: false,
     separate_wudhu_areas: true,
     open_24_hours: false,
+    google_maps_link:"https://maps.app.goo.gl/ChmKUzjVoDeaVA8r8",
     image_url:
-      "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      "https://lh3.googleusercontent.com/gps-proxy/ALd4DhGECEGBHEnl-HH5wIx-PTQW27Mj-muKShEnz4yGjcxMKNE7GPFGa1WeVnY44zJsL7qn3dS_3GiMJrEhcVgqq1JHEvBr3O3DepoLDC7rmiPv99UweafPm0p7H-s6knwbg8J8lp_Vm0IVjTjB-kw_gvl411xqYnMFYlCzIxw5HPkORz9bxwSdjiOH842IEZ2U8uwgmC4=w408-h544-k-no",
     description:
       "Masjid sederhana namun nyaman dengan arsitektur tradisional. Terkenal dengan jamaah yang solid dan program tahfidz untuk anak-anak.",
     friday_khutbah_time: "12:30",
@@ -1776,8 +1897,9 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
     prayer_mats_provided: false,
     separate_wudhu_areas: true,
     open_24_hours: false,
+    google_maps_link:"https://maps.app.goo.gl/TkgBDdgJMpNFnNxDA",
     image_url:
-      "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      "https://lh3.googleusercontent.com/gps-cs-s/AC9h4no3Pp_vwvbQPmF9SdrY02GJ2rOaDwWWi7o8im5vJJnkfS9kVcYPlitzCM9UqqT-OdxKuwsTFlq49QfVqP8P4qdfIZfaSUTqFluLA_t4J6jkuP0wQ3CdO1GhDJMkf0cIl1nDrRVC=w408-h544-k-no",
     description:
       "Masjid sederhana namun nyaman dengan arsitektur tradisional. Terkenal dengan jamaah yang solid dan program tahfidz untuk anak-anak.",
     friday_khutbah_time: "12:30",
@@ -1799,8 +1921,9 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
     prayer_mats_provided: false,
     separate_wudhu_areas: true,
     open_24_hours: false,
+    google_maps_link:"https://maps.app.goo.gl/fQrC1SfDX2uYa8mTA",
     image_url:
-      "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nrZroGD83UauEzRcuLcE1AdEd7NmbdbtWai0v3KwC6pxJ_pxdLPa-qM6MPKWyhrrawOLmcL5F-Iiwz7awXotEqOKu7jm-TcY1JpiJPu_QdfNFTPCoZnZzHp7LXn97ScicO6IbC8=w426-h240-k-no",
     description:
       "Masjid sederhana namun nyaman dengan arsitektur tradisional. Terkenal dengan jamaah yang solid dan program tahfidz untuk anak-anak.",
     friday_khutbah_time: "12:30",
@@ -1809,7 +1932,8 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
   {
     id: 79,
     name: "Masjid Al‑Falah",
-    address: "Jl. A. Wahab Syahranie No.54 RT.24, Air Hitam, Kec. Samarinda Ulu",
+    address:
+      "Jl. A. Wahab Syahranie No.54 RT.24, Air Hitam, Kec. Samarinda Ulu",
     latitude: -0.452439,
     longitude: 117.0435872,
     distance: 1.8,
@@ -1822,8 +1946,9 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
     prayer_mats_provided: false,
     separate_wudhu_areas: true,
     open_24_hours: false,
+    google_maps_link:"https://maps.app.goo.gl/LX4enUHAoKZWtyoy7",
     image_url:
-      "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      "https://lh3.googleusercontent.com/gps-cs-s/AC9h4noq0GvR-sbDfJkFBnw7XAltAfbvb0xfXMZyjK9A5i-QvZ6PCnU9Ejc6_bKbBYSx57Dvg1haM36GRx8ITrYhorDJz07p--JKZcZ4Rs2bB9aBdIBnEgWqkDv13xa-giaM9ZBiifUS=w408-h544-k-no",
     description:
       "Masjid sederhana namun nyaman dengan arsitektur tradisional. Terkenal dengan jamaah yang solid dan program tahfidz untuk anak-anak.",
     friday_khutbah_time: "12:30",
@@ -1845,8 +1970,9 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
     prayer_mats_provided: false,
     separate_wudhu_areas: true,
     open_24_hours: false,
+    google_maps_link:"https://maps.app.goo.gl/g2SjGnjnb8j7kLo59",
     image_url:
-      "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nrozNUDK2uRS5wbq3r_Ujr3hKqwKE9uSD90TxWIoaLvpFwuC9sROPGiODsRnXVQj28zUe9rFOarQ79ySGJWyrGZcF72FHxc-e0m_2ZSIzFcWZAEX4wW8K6Vp76Hft5zTrM6Q0g=w408-h544-k-no",
     description:
       "Masjid sederhana namun nyaman dengan arsitektur tradisional. Terkenal dengan jamaah yang solid dan program tahfidz untuk anak-anak.",
     friday_khutbah_time: "12:30",
@@ -1868,8 +1994,9 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
     prayer_mats_provided: false,
     separate_wudhu_areas: true,
     open_24_hours: false,
+    google_maps_link:"https://maps.app.goo.gl/v9oYjHCdgsKcqo39A",
     image_url:
-      "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nrheZy8Ny5zk4XnZ_jhQtBKS7I6mtiNV_V6rftdlAag-k5iQni6KQZaPFRJ6q_f16XlwU4mClPLZJymEvk9gVbFBui6heNrRcZKhdXG7E6uxQKIAF0W6902FzFU5jZq_EG03nA=w408-h544-k-no",
     description:
       "Masjid sederhana namun nyaman dengan arsitektur tradisional. Terkenal dengan jamaah yang solid dan program tahfidz untuk anak-anak.",
     friday_khutbah_time: "12:30",
@@ -1891,8 +2018,9 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
     prayer_mats_provided: false,
     separate_wudhu_areas: true,
     open_24_hours: false,
+    google_maps_link:"https://maps.app.goo.gl/HywsuqCVyTYX222L7",
     image_url:
-      "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nqV0FjgyDR8M1CbF10BofwoT4WRBkt6oZkhdmAS7Lf0U3fRdoDUbns9x02MjONPEoxoCpX42oLILmhcCI8Oh1be0MoFL6zn28J9EEk24qhuqPhycfe5FvYvHOpyUogLpHXt1F9b=w408-h307-k-no",
     description:
       "Masjid sederhana namun nyaman dengan arsitektur tradisional. Terkenal dengan jamaah yang solid dan program tahfidz untuk anak-anak.",
     friday_khutbah_time: "12:30",
@@ -1914,8 +2042,9 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
     prayer_mats_provided: false,
     separate_wudhu_areas: true,
     open_24_hours: false,
+    google_maps_link:"https://maps.app.goo.gl/ytjmBGHqNeLCAQdf7",
     image_url:
-      "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nqoCA0_nlCnu3T2ghi1oWXMQd0uEO9T3HEmrDC7qEqQA4Qw4tHsPYuzS7-UkcMuFaR96hdb8CRsEWMRJUq7Fn9U4BWFXY6PzRx7yCBrOH2Cpmhvde8aSRFK02G29kQcwXK9gLRt=w408-h306-k-no",
     description:
       "Masjid sederhana namun nyaman dengan arsitektur tradisional. Terkenal dengan jamaah yang solid dan program tahfidz untuk anak-anak.",
     friday_khutbah_time: "12:30",
@@ -1924,7 +2053,8 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
   {
     id: 84,
     name: "Masjid Jami' Ar Raudhah",
-    address: "Jl. RE Martadinata Jl. Raudah No.1, Tlk. Lerong Ilir, Kec. Samarinda Ulu",
+    address:
+      "Jl. RE Martadinata Jl. Raudah No.1, Tlk. Lerong Ilir, Kec. Samarinda Ulu",
     latitude: -0.4987806,
     longitude: 117.054407,
     distance: 1.8,
@@ -1937,8 +2067,9 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
     prayer_mats_provided: false,
     separate_wudhu_areas: true,
     open_24_hours: false,
+    google_maps_link:"https://maps.app.goo.gl/pNiGPAh2szLbdGECA",
     image_url:
-      "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      "https://lh3.googleusercontent.com/gps-cs-s/AC9h4npwtSDzsMkrYaNEl6u-kAiaIyJu7gX3vqAn1Are8SU8GE4ZUnc1S0wkCy5sxSmB-SEyvvEO06Al1awefFxj95wyb6u5bYDJNH2UHK8uFfg796-zYLc0rxz3tMngTDuDeL9N0jMb=w408-h544-k-no",
     description:
       "Masjid sederhana namun nyaman dengan arsitektur tradisional. Terkenal dengan jamaah yang solid dan program tahfidz untuk anak-anak.",
     friday_khutbah_time: "12:30",
@@ -1960,8 +2091,9 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
     prayer_mats_provided: false,
     separate_wudhu_areas: true,
     open_24_hours: false,
+    google_maps_link:"https://maps.app.goo.gl/KJUj3EMk8qU8NgAd6",
     image_url:
-      "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nrU2eJE-su5jLEb7GcoZA7qhPWL6CjnU58ThO-ymMVN0ruh7o1O5WV0wu_6mWtawaDE4JO5fOfV8vhCDzrUnpbI3atyVVCd1uopE65CmcSRgUjpiSGWW5hZm60bBDHljGtoOuCnzA=w408-h544-k-no",
     description:
       "Masjid sederhana namun nyaman dengan arsitektur tradisional. Terkenal dengan jamaah yang solid dan program tahfidz untuk anak-anak.",
     friday_khutbah_time: "12:30",
@@ -1983,8 +2115,9 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
     prayer_mats_provided: false,
     separate_wudhu_areas: true,
     open_24_hours: false,
+    google_maps_link:"https://maps.app.goo.gl/ZTn7gFsJWRRCQJAm8",
     image_url:
-      "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nrr5n5Al7kjpnO-7wnTEKWLwoBoYsn9fSRMR6zvN_dzZ19Tnu5hPNmzyYTk_u_aDJBciNPzGOX1naqm87tWfCAJt8Axm9mN2xK0mPj9NBkfFYbhIdIDbBmKoGz7FXFLLF1cjfoDcw=w426-h240-k-no",
     description:
       "Masjid sederhana namun nyaman dengan arsitektur tradisional. Terkenal dengan jamaah yang solid dan program tahfidz untuk anak-anak.",
     friday_khutbah_time: "12:30",
@@ -2006,8 +2139,9 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
     prayer_mats_provided: false,
     separate_wudhu_areas: true,
     open_24_hours: false,
+    google_maps_link:"https://maps.app.goo.gl/Cc7zBsehQKP5mdZZ9", 
     image_url:
-      "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      "https://lh3.googleusercontent.com/gps-cs-s/AC9h4np1kzo14fXJsn2YDI2-zTTjATZ--ONuxyZ--NQBuR8qkqpSNVw5oS0xtRHwF9gkW3R4hXp5Zfl8DqcUWdwOIbSkSj-MRMkT7DIbjqq9HgPA6ZGLIFU5b2FIlUaBDCWFMJVaZN_0jg=w426-h444-k-no",
     description:
       "Masjid sederhana namun nyaman dengan arsitektur tradisional. Terkenal dengan jamaah yang solid dan program tahfidz untuk anak-anak.",
     friday_khutbah_time: "12:30",
@@ -2029,8 +2163,9 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
     prayer_mats_provided: false,
     separate_wudhu_areas: true,
     open_24_hours: false,
+    google_maps_link:"https://maps.app.goo.gl/Cv5FYfgACqnzsjyU9",
     image_url:
-      "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nrX3q2po2XdMXGd2M3NNA6q3Rw5bT-UzyYNujvbG52fPNSdrlZy5yAJRM4MSrNuYDaQ0ZgEfSDldEwLiMKF0J0r7xNVUi9_TA-iFgYpeJD77j6RcVnlQ8jPp0Z04J7eOjZbNB-f=w408-h544-k-no",
     description:
       "Masjid sederhana namun nyaman dengan arsitektur tradisional. Terkenal dengan jamaah yang solid dan program tahfidz untuk anak-anak.",
     friday_khutbah_time: "12:30",
@@ -2052,8 +2187,9 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
     prayer_mats_provided: false,
     separate_wudhu_areas: true,
     open_24_hours: false,
+    google_maps_link:"https://maps.app.goo.gl/rqHUuQqr8vt35MiLA",
     image_url:
-      "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      "https://lh3.googleusercontent.com/gps-cs-s/AC9h4npUEPcNKovn9IviESzpvNbeooo_kVuEuD5x8khoKObkWwTI0pIvdOo8Ms_OSl31Z2HAipxtSD71QAImYOqmwEY-7Qml5KTvJ2PZBnALlw3I3x0KnYOnH0dgNiRRX6uXh6zBL7Y=w408-h544-k-no",
     description:
       "Masjid sederhana namun nyaman dengan arsitektur tradisional. Terkenal dengan jamaah yang solid dan program tahfidz untuk anak-anak.",
     friday_khutbah_time: "12:30",
@@ -2075,8 +2211,9 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
     prayer_mats_provided: false,
     separate_wudhu_areas: true,
     open_24_hours: false,
+    google_maps_link:"https://maps.app.goo.gl/7YsYbVeAJhFyoLrA8",
     image_url:
-      "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      "https://lh3.googleusercontent.com/gps-cs-s/AC9h4no-EWF-v1OoPauB7Y1Y5dA5GkNhYeTLZ8aN1XZyZ_fPE1CIOMNXMD5LfyER_2CCWv7CInvMsZrOWR9C9RB8S8vxyAqXqgkvrEjmY5Q8KBvT6L_KBgtffO1M2oJ7HjuOE9oVa8rIqg=w408-h544-k-no",
     description:
       "Masjid sederhana namun nyaman dengan arsitektur tradisional. Terkenal dengan jamaah yang solid dan program tahfidz untuk anak-anak.",
     friday_khutbah_time: "12:30",
@@ -2098,8 +2235,9 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
     prayer_mats_provided: false,
     separate_wudhu_areas: true,
     open_24_hours: false,
+    google_maps_link:"https://maps.app.goo.gl/ShwiVXzG4dtohU5u7",
     image_url:
-      "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      "https://lh3.googleusercontent.com/gps-cs-s/AC9h4noLOZ7zTAQHjguUD2O1r6osF1qd1ZWz_ydVIkPsLv7CKiJIJGDL0LUKmSoCFe1SItoa8zAsvZkmIiNS7u7zOTK85ntI9lVuO3G9dlTS2j0jlcLNLugrDWTZuo0fcueO-kUimAMRMAAmQCj2=w408-h306-k-no",
     description:
       "Masjid sederhana namun nyaman dengan arsitektur tradisional. Terkenal dengan jamaah yang solid dan program tahfidz untuk anak-anak.",
     friday_khutbah_time: "12:30",
@@ -2121,8 +2259,9 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
     prayer_mats_provided: false,
     separate_wudhu_areas: true,
     open_24_hours: false,
+    google_maps_link:"https://maps.app.goo.gl/JMcrfQ64HC8DqPZu9",
     image_url:
-      "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nrM3oBzBhatZQERH2QOffrmlco7BUsRhNUZETJmJ2cqFE21Jlhg2BHUvJRSyXNO4Q_LZWMYmtlO4AtaC3BpDyGsAgYYvFOfRnxLjc59_SZhRg5W1eFFcW-ydKnmjr9PufIzHgA=w408-h543-k-no",
     description:
       "Masjid sederhana namun nyaman dengan arsitektur tradisional. Terkenal dengan jamaah yang solid dan program tahfidz untuk anak-anak.",
     friday_khutbah_time: "12:30",
@@ -2144,8 +2283,9 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
     prayer_mats_provided: false,
     separate_wudhu_areas: true,
     open_24_hours: false,
+    google_maps_link:"https://maps.app.goo.gl/q8i58qRdJrJ4LkH49",
     image_url:
-      "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      "https://lh3.googleusercontent.com/gps-cs-s/AC9h4noXOWt0VuOaTyQ-GRdIV4iGshqI97wgNTFXyMjmeMTv3IXg-_8gzUuJ8rn14zimMos0zyUsT39COi3DKWM2W5UGKOPY-jlImN2mciBsQE4s89fvRN8bFpuLjpb0QcXQAzVfVndWig=w408-h544-k-no",
     description:
       "Masjid sederhana namun nyaman dengan arsitektur tradisional. Terkenal dengan jamaah yang solid dan program tahfidz untuk anak-anak.",
     friday_khutbah_time: "12:30",
@@ -2167,8 +2307,9 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
     prayer_mats_provided: false,
     separate_wudhu_areas: true,
     open_24_hours: false,
+    google_maps_link:"https://maps.app.goo.gl/rwEsBEqybsc9q9d68",
     image_url:
-      "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      "https://lh3.googleusercontent.com/gps-cs-s/AC9h4npjzAFx88d_kP9-ZfqfDiovLPxcadKBEpk8UC6fOpjviFuuSocwvdUOKDizPkrso8MZM6Nmk4BQ9S7z9pV1Bemn9ZSe0NQqBqwmCTSxE-FZTEsA-LMF3SYr7n8MTqA3MwX629ZQ=w488-h544-k-no",
     description:
       "Masjid sederhana namun nyaman dengan arsitektur tradisional. Terkenal dengan jamaah yang solid dan program tahfidz untuk anak-anak.",
     friday_khutbah_time: "12:30",
@@ -2190,8 +2331,9 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
     prayer_mats_provided: false,
     separate_wudhu_areas: true,
     open_24_hours: false,
+    google_maps_link:"https://maps.app.goo.gl/wxNWfBzmpwBWZ99AA",
     image_url:
-      "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      "https://lh3.googleusercontent.com/gps-proxy/ALd4DhE1w-QBL6_QNDAm6WufX8B5O86xxsXT9apoywSFYHdor9Cbz143hJFvz8jEqleIs0ADAWyupB3JhMhao46IKA5rDcWANhhlfgCJtvEamtzURIv48DWv4iHSsT7-O1ovv_3-OiJf9E4FDml_-fIyhfcZrZUVP_ThrKoeSpmZzC7PKZi1FIjUVuKCvj8x_c24QebmRKE=w408-h306-k-no",
     description:
       "Masjid sederhana namun nyaman dengan arsitektur tradisional. Terkenal dengan jamaah yang solid dan program tahfidz untuk anak-anak.",
     friday_khutbah_time: "12:30",
@@ -2213,8 +2355,9 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
     prayer_mats_provided: false,
     separate_wudhu_areas: true,
     open_24_hours: false,
+    google_maps_link:"https://maps.app.goo.gl/JaBAdAohQWBoPfFT8",
     image_url:
-      "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      "https://lh3.googleusercontent.com/gps-cs-s/AC9h4notICog9YTbNFl-jjW0E7j3ogi8F9KRNK6hg6ROfS9Ac1fBXi8jJzYNyuio4bwMxA2V4AmvCvJBtG7oKc0SmsQm5wCPT1RXi5TEgiUSonZdSRL8rYR8y7aXqS4U93Lpu5Xl5jFh=w426-h536-k-no",
     description:
       "Masjid sederhana namun nyaman dengan arsitektur tradisional. Terkenal dengan jamaah yang solid dan program tahfidz untuk anak-anak.",
     friday_khutbah_time: "12:30",
@@ -2236,8 +2379,9 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
     prayer_mats_provided: false,
     separate_wudhu_areas: true,
     open_24_hours: false,
+    google_maps_link:"https://maps.app.goo.gl/CkA9QQLaWyi4L1yw9",
     image_url:
-      "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nrGHU0FwWJkq-6xPvLDDbnE7MHYsaboNw_L5tONcOVanbjaIRp904eHc5YsPUToCt3vFaR1XSnAQgAqlu6g1kWmY_HBy4c1XSRpEKpzHZ40mXys2glXBu3xJZubMBxc00_XZuoL=w408-h306-k-no",
     description:
       "Masjid sederhana namun nyaman dengan arsitektur tradisional. Terkenal dengan jamaah yang solid dan program tahfidz untuk anak-anak.",
     friday_khutbah_time: "12:30",
@@ -2259,8 +2403,9 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
     prayer_mats_provided: false,
     separate_wudhu_areas: true,
     open_24_hours: false,
+    google_maps_link:"https://maps.app.goo.gl/2UtPSBzhxjLzGySRA",
     image_url:
-      "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      "https://lh3.googleusercontent.com/gps-cs-s/AC9h4noaLnmsaF96XSa8w0ZDWIMknz10kHwvUgCTNMWJBNq65nZxzY0sddRBF6zzzcoXiW_WMUNYokwvXOQzyTH6CJ6aIdwYxkWXbcL7CWQH0FwMr3--yTOApFhOLlDENMioRhDVsR10=w408-h544-k-no",
     description:
       "Masjid sederhana namun nyaman dengan arsitektur tradisional. Terkenal dengan jamaah yang solid dan program tahfidz untuk anak-anak.",
     friday_khutbah_time: "12:30",
@@ -2282,8 +2427,9 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
     prayer_mats_provided: false,
     separate_wudhu_areas: true,
     open_24_hours: false,
+    google_maps_link:"https://maps.app.goo.gl/nYooQYhC8Tat9DvT6",
     image_url:
-      "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nqw_K4klVpyttUIPWOmdkFNvQenezFC5sbUNqXGMW5dfcNSGSWZppl3NNt6wifDei19t_u11RyCehGosGJtU9LrblwjUqjxf7M8rrg4E12lgWC9uWfFoWLQ8Dh_axabegM4gbknGA=w408-h544-k-no",
     description:
       "Masjid sederhana namun nyaman dengan arsitektur tradisional. Terkenal dengan jamaah yang solid dan program tahfidz untuk anak-anak.",
     friday_khutbah_time: "12:30",
@@ -2305,8 +2451,9 @@ export const createMockMosques = (userLat: number, userLng: number): Mosque[] =>
     prayer_mats_provided: false,
     separate_wudhu_areas: true,
     open_24_hours: false,
+    google_maps_link:"https://maps.app.goo.gl/tMcC3TYLxxfZmhjT8",
     image_url:
-      "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      "https://lh3.googleusercontent.com/gps-cs-s/AC9h4npnoCZC1h3SxcMDQJ9Rm2PCxDfm3JveYItwYDmpYp7DTXBlL1FNM-R-3LOrAiE46s-hRhhdDzGsz3bDDkCmnZV-AJ0gWfGqj6GC_8Qy8eXbTIx7iEEReWgmjIlVH1F_gGZUB2hn_g=w408-h306-k-no",
     description:
       "Masjid sederhana namun nyaman dengan arsitektur tradisional. Terkenal dengan jamaah yang solid dan program tahfidz untuk anak-anak.",
     friday_khutbah_time: "12:30",
