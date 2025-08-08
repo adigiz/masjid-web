@@ -127,12 +127,15 @@ export default function MosqueDetailModal({
 
   const handleDirectionsClick = () => {
     // Guard against SSR
-    if (typeof window === 'undefined') return;
-    
+    if (typeof window === "undefined") return;
+
     // Use google_maps_link if available, otherwise construct search query
-    const mapsUrl = mosque.google_maps_link || 
-      `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(mosque.address)}`;
-    
+    const mapsUrl =
+      mosque.google_maps_link ||
+      `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
+        mosque.address
+      )}`;
+
     // Open external link with security best practices
     const newWindow = window.open(mapsUrl, "_blank");
     if (newWindow) {
@@ -265,17 +268,25 @@ export default function MosqueDetailModal({
                   <h3 className="font-semibold text-gray-900 mb-3 flex items-center">
                     <svg
                       className="w-5 h-5 mr-2 text-teal-600"
+                      viewBox="0 0 24 24"
                       fill="none"
                       stroke="currentColor"
-                      viewBox="0 0 24 24"
-                      aria-hidden="true"
+                      strokeWidth={2}
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      xmlns="http://www.w3.org/2000/svg"
                     >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707"
-                      />
+                      {/* <!-- Unit AC utama --> */}
+                      <rect x="3" y="4" width="18" height="6" rx="1" ry="1" />
+
+                      {/* <!-- Ventilasi horizontal --> */}
+                      <line x1="6" y1="7" x2="18" y2="7" />
+                      <line x1="6" y1="9" x2="18" y2="9" />
+
+                      {/* <!-- Tetesan udara dingin --> */}
+                      <path d="M8 14v2" />
+                      <path d="M12 14v3" />
+                      <path d="M16 14v2.5" />
                     </svg>
                     Sistem Pendingin
                   </h3>
@@ -297,11 +308,48 @@ export default function MosqueDetailModal({
                       viewBox="0 0 24 24"
                       aria-hidden="true"
                     >
+                      {/* Shower pipe vertical */}
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2.5}
+                        d="M8 3v8"
+                      />
+
+                      {/* Shower pipe horizontal */}
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2.5}
+                        d="M8 11h6"
+                      />
+
+                      {/* Shower head */}
+                      <circle cx="14" cy="11" r="2.5" strokeWidth={2.5} />
+
+                      {/* Water streams */}
                       <path
                         strokeLinecap="round"
                         strokeLinejoin="round"
                         strokeWidth={2}
-                        d="M8 9l3 3-3 3m13 0h-6"
+                        d="M12 15v4M14 16v3M16 15v4"
+                        opacity="0.7"
+                      />
+
+                      {/* Water drops */}
+                      <circle
+                        cx="13"
+                        cy="20"
+                        r="0.5"
+                        fill="currentColor"
+                        opacity="0.6"
+                      />
+                      <circle
+                        cx="15"
+                        cy="20.5"
+                        r="0.5"
+                        fill="currentColor"
+                        opacity="0.8"
                       />
                     </svg>
                     Fasilitas Wudhu
@@ -472,19 +520,29 @@ export default function MosqueDetailModal({
 
                   <div className="flex items-center p-3 bg-gray-50 rounded-lg">
                     <svg
-                      className="w-3 h-3 text-blue-500"
+                      className="w-3 h-3 text-green-500"
+                      viewBox="0 0 24 24"
                       fill="none"
                       stroke="currentColor"
-                      viewBox="0 0 24 24"
-                      aria-hidden="true"
+                      strokeWidth={2}
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      xmlns="http://www.w3.org/2000/svg"
                     >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"
-                      />
+                      {/* Rak bagian atas */}
+                      <rect x="3" y="4" width="18" height="3" rx="1" />
+                      {/* Rak bagian tengah */}
+                      <rect x="3" y="10.5" width="18" height="3" rx="1" />
+                      {/* Rak bagian bawah */}
+                      <rect x="3" y="17" width="18" height="3" rx="1" />
+                      {/* Sepatu kiri atas */}
+                      <path d="M5.5 5.5h4v1h-4z" fill="currentColor" />
+                      {/* Sepatu kanan tengah */}
+                      <path d="M14.5 12h4v1h-4z" fill="currentColor" />
+                      {/* Sepatu kiri bawah */}
+                      <path d="M5.5 18.5h4v1h-4z" fill="currentColor" />
                     </svg>
+
                     <div className="ml-3">
                       <p className="font-medium text-sm text-gray-900">
                         Tempat Sepatu
@@ -531,17 +589,27 @@ export default function MosqueDetailModal({
                     type="button"
                   >
                     <svg
-                      className="w-5 h-5 mr-2"
+                      className="w-3 h-3 inline mr-1"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
-                      aria-hidden="true"
+                      strokeWidth={2}
+                      xmlns="http://www.w3.org/2000/svg"
                     >
                       <path
+                        d="M12 2v20"
                         strokeLinecap="round"
                         strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-1.447-.894L15 9m0 8V9m0 0V7"
+                      />
+                      <path
+                        d="M12 6H5l-1.5 2L5 10h7V6z"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                      <path
+                        d="M12 14h7l1.5 2L19 18h-7v-4z"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
                       />
                     </svg>
                     Petunjuk Arah

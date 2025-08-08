@@ -65,13 +65,17 @@ export const BikeParkingIcon = ({
   className,
 }: IconProps) => (
   <svg
+    xmlns="http://www.w3.org/2000/svg"
     className={`${sizeClasses[size]} ${getColorClass(available, className)}`}
-    fill="currentColor"
+    fill="none"
     viewBox="0 0 24 24"
+    stroke="currentColor"
+    strokeWidth={2}
   >
-    <path d="M5 18.5a3.5 3.5 0 107 0 3.5 3.5 0 00-7 0zM16.5 18.5a3.5 3.5 0 107 0 3.5 3.5 0 00-7 0z" />
-    <path d="M5 18.5c0-.28.22-.5.5-.5s.5.22.5.5-.22.5-.5.5-.5-.22-.5-.5zm14 0c0-.28.22-.5.5-.5s.5.22.5.5-.22.5-.5.5-.5-.22-.5-.5z" />
-    <path d="M5 15l6.5 0V9h2l2 6h3.5v-2h-2l-1.07-3.2c-.18-.54-.69-.8-1.25-.8H9.5v2L5 15z" />
+    <circle cx="6.5" cy="17.5" r="3.5" />
+    <circle cx="17.5" cy="17.5" r="3.5" />
+    <path d="M6.5 17.5L9 10h3l2 5h3.5" />
+    <path d="M12 10L13 7h1.5" />
   </svg>
 );
 
@@ -81,13 +85,14 @@ export const WheelchairIcon = ({
   className,
 }: IconProps) => (
   <svg
+    xmlns="http://www.w3.org/2000/svg"
     className={`${sizeClasses[size]} ${getColorClass(available, className)}`}
-    fill="currentColor"
+    fill="none"
     viewBox="0 0 24 24"
+    stroke="currentColor"
+    strokeWidth={2}
   >
-    <path d="M12 6a2 2 0 110-4 2 2 0 010 4z" />
-    <path d="M21 9h-6l-2 7-3-4h-2l-1 2v6h2v-4l1.5-3L13 17v3h2v-4l-1.5-2.5L15.5 11H21V9z" />
-    <path d="M7.5 22a5.5 5.5 0 110-11 5.5 5.5 0 010 11zm0-2a3.5 3.5 0 100-7 3.5 3.5 0 000 7z" />
+    <path d="M10 5a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0zM12 7v4h6m-2 6a5 5 0 11-10 0 5 5 0 0110 0z" />
   </svg>
 );
 
@@ -97,44 +102,34 @@ export const PrayerMatIcon = ({
   className,
 }: IconProps) => (
   <svg
+    xmlns="http://www.w3.org/2000/svg"
     className={`${sizeClasses[size]} ${getColorClass(available, className)}`}
     fill="none"
-    stroke="currentColor"
     viewBox="0 0 24 24"
+    stroke="currentColor"
+    strokeWidth={2}
   >
-    <rect
-      x="4"
-      y="9"
-      width="16"
-      height="10"
-      rx="1"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-    />
-    <path
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      d="M8 9V7a1 1 0 011-1h6a1 1 0 011 1v2"
-    />
-    <circle cx="12" cy="14" r="2" strokeWidth={2} />
+    <rect x="6" y="4" width="12" height="16" rx="1" />
+    <path d="M9 8h6M9 12h6M9 16h6" />
   </svg>
 );
 
-export const ACIcon = ({ size = "md", available, className }: IconProps) => (
+export const ShoeRackIcon = ({
+  size = "md",
+  available,
+  className,
+}: IconProps) => (
   <svg
+    xmlns="http://www.w3.org/2000/svg"
     className={`${sizeClasses[size]} ${getColorClass(available, className)}`}
+    viewBox="0 0 24 24"
     fill="none"
     stroke="currentColor"
-    viewBox="0 0 24 24"
+    strokeWidth={2}
   >
-    <path
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707"
-    />
+    <rect x="4" y="4" width="16" height="3" rx="1" />
+    <rect x="4" y="10.5" width="16" height="3" rx="1" />
+    <rect x="4" y="17" width="16" height="3" rx="1" />
   </svg>
 );
 
@@ -161,7 +156,7 @@ export const FacilityItem = ({
     bike: BikeParkingIcon,
     wheelchair: WheelchairIcon,
     prayerMat: PrayerMatIcon,
-    ac: ACIcon,
+    ac: ShoeRackIcon,
   };
 
   const IconComponent = iconComponents[icon];

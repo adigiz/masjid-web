@@ -11,7 +11,7 @@ import {
   BikeParkingIcon,
   WheelchairIcon,
   PrayerMatIcon,
-  ACIcon,
+  ShoeRackIcon,
 } from "@/components/FacilityIcons";
 import { Mosque } from "@/types/Mosque";
 import { createMockMosques } from "../data/mockMosques";
@@ -290,7 +290,7 @@ function MosquesPageContent() {
                             <PrayerMatIcon size="lg" available={mosque.prayer_mats_provided} />
                           </div>
                           <div title="AC">
-                            <ACIcon size="lg" available={mosque.has_ac} />
+                            <ShoeRackIcon size="lg" available={mosque.has_ac} />
                           </div>
                         </div>
                       </div>
